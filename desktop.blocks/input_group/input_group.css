@@ -1,0 +1,99 @@
+.input_group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input_group__input {
+}
+
+.input_group__input_form_control {
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #fff;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    box-shadow: none;
+    border-radius: 0;
+    height: 14px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: table-cell;
+}
+
+.input_group__input_form_control:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.input_group__input_input_txt {
+    padding: 5px 0 4px 26px;
+    line-height: 1;
+}
+
+.input_group__btn_group {
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.input_group__btn_group:last-child > .input_group__btn {
+    margin-left: -1px;
+}
+
+.input_group__btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-background-clip: padding;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.input_group__btn:focus,
+.input_group__btn:hover {
+    outline: 0;
+}
+
+.input_group__btn_group > .input_group__btn {
+    position: relative;
+}
+
+.input_group__btn_btn_white {
+    border-color: #fff;
+    background: #f7f7f7;
+    color: #fd1a1d;
+    font-size: 12px;
+    padding: 3px 12px;
+    z-index: 1 !important;
+}

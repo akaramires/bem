@@ -1,0 +1,22 @@
+.page {
+    font-family: 'Museo Sans W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #424242;
+    background-color: #fff;
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    max-height: 100%;
+    min-width: 300px;
+    margin: 0;
+}
+
+.page__container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

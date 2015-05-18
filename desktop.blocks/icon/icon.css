@@ -1,0 +1,22 @@
+.icon {
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_white_envelope {
+    top: 7px;
+    left: 5px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+}
+
+.icon_white_envelope:before {
+    content: "\e61d";
+}
