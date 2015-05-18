@@ -18,11 +18,6 @@
             url : '_fom.js'
         }
     ],
-    mods   : {
-        mode: 'pc',
-        type: 'page',
-        name: 'home'
-    },
     content: [
         {
             block  : 'header',
@@ -42,23 +37,31 @@
                                 },
                                 {
                                     block  : 'form',
-                                    attrs  : {
-                                        autocomplete: 'off',
-                                        action      : '#'
-                                    },
+                                    mix    : [
+                                        {
+                                            block: 'header',
+                                            elem : 'form'
+                                        }
+                                    ],
                                     mods   : {
-                                        type    : 'envelope',
-                                        location: 'header'
+                                        type: 'envelope'
                                     },
                                     content: [
                                         {
                                             block: 'icon',
+                                            mix  : [
+                                                {
+                                                    block: 'form_type_envelope',
+                                                    elem : 'icon'
+                                                }
+                                            ],
                                             mods : {
-                                                white: 'envelope'
+                                                type : 'envelope',
+                                                color: 'white'
                                             }
                                         },
                                         {
-                                            block  : 'input_group',
+                                            block  : 'input-group',
                                             attrs  : {
                                                 'data-toggle' : 'popover',
                                                 'data-trigger': 'focus',
@@ -69,20 +72,38 @@
                                                     elem : 'input',
                                                     tag  : 'input',
                                                     mods : {
-                                                        form : 'control',
-                                                        input: 'txt'
+                                                        form: 'control'
                                                     },
                                                     attrs: {
-                                                        autocomplete: 'off',
-                                                        placeholder : 'Enter your email Address'
+                                                        placeholder: 'Enter your email Address'
                                                     }
                                                 },
                                                 {
-                                                    elem   : 'btn_group',
+                                                    block  : 'input-group-btn',
+                                                    mix    : [
+                                                        {
+                                                            block: 'header',
+                                                            elem : 'input-group-btn'
+                                                        }
+                                                    ],
                                                     content: {
-                                                        elem   : 'btn',
+                                                        block  : 'btn',
+                                                        mix    : [
+                                                            {
+                                                                block: 'input-group-btn',
+                                                                elem : 'btn',
+                                                                mods : {
+                                                                    color: 'white'
+                                                                }
+                                                            },
+                                                            {
+                                                                block: 'header',
+                                                                elem : 'btn'
+                                                            }
+                                                        ],
+                                                        tag    : 'a',
                                                         mods   : {
-                                                            btn: 'white'
+                                                            color: 'white'
                                                         },
                                                         attrs  : {
                                                             type: 'button'
@@ -93,11 +114,178 @@
                                             ]
                                         }
                                     ]
-                                },
+                                }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            block  : 'navbar',
+            mix    : [
+                {
+                    block: 'header',
+                    elem : 'navbar'
+                }
+            ],
+            mods   : {
+                type: 'fix'
+            },
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'header',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'navbar-toggle',
+                            attrs  : {
+                                'data-toggle': 'collapse',
+                                'data-target': '.navbar-collapse'
+                            },
+                            content: [
+                                {
+                                    elem: 'icon-menu'
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'logo',
+                            attrs  : {
+                                title: 'Frame of Mind'
+                            },
+                            content: [
+                                {
+                                    elem : 'logo-deck',
+                                    tag  : 'img',
+                                    attrs: {
+                                        src: 'http://www.frameofmindcoaching.com/wp-content/themes/fom/assets/built/img/logo.png',
+                                        alt: 'Frame of Mind'
+                                    }
+                                },
+                                {
+                                    elem : 'logo-mob',
+                                    tag  : 'img',
+                                    attrs: {
+                                        src: 'http://www.frameofmindcoaching.com/wp-content/themes/fom/assets/built/img/logo_mob.png',
+                                        alt: 'Frame of Mind'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            block  : 'btn',
+                            mods   : {
+                                color: 'gray'
+                            },
+                            mix    : [
+                                {
+                                    block: 'header',
+                                    elem : 'btn_gray'
+                                }
+                            ],
+                            attrs  : {
+                                'data-toggle': 'modal',
+                                'data-target': '#modalThanks'
+                            },
+                            content: 'Get Started'
+                        },
+                        {
+                            elem   : 'navbar-collapse',
+                            mods   : {
+                                state: 'collapse'
+                            },
+                            content: [
+                                {
+                                    block  : 'menu',
+                                    mix    : [
+                                        {
+                                            block: 'header',
+                                            elem : 'menu'
+                                        }
+                                    ],
+                                    content: [
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Coaching'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Our Team'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Testimonials'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'News &#038; View'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Certification'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Contact'
+                                                }
+                                            }
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: {
+                                                elem   : 'link',
+                                                content: {
+                                                    elem   : 'title',
+                                                    content: 'Sign In'
+                                                }
+                                            }
+                                        },
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]

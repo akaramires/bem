@@ -1,0 +1,44 @@
+.menu {
+
+}
+
+.menu__control {
+
+}
+
+.menu__item {
+    display: inline-block;
+    float: left;
+    padding: 22px 8px 18px;
+}
+
+.menu__item:last-child {
+    position: relative;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.menu__item:last-child:after {
+    width: 1px;
+    height: 17px;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 28px;
+    background: #424242;
+}
+
+.menu__link {
+    padding: 3px;
+    color: #424242;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none !important;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.menu__title {
+
+}
