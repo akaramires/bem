@@ -55,3 +55,43 @@
 .btn-gray:focus {
     border-color: #333;
 }
+
+.btn_color_red {
+    background: #bd0000;
+    color: #fff;
+    border-color: #890001;
+    float: right;
+    margin-right: 10px;
+}
+
+.btn_color_red:hover {
+    background: #c00;
+    color: #fff;
+}
+
+.btn_color_red:active,
+.btn_color_red:focus {
+    background: #ae0000;
+    color: #fff;
+}
+
+.btn_color_transparent {
+    border-color: #fff;
+    color: #fff;
+    background: none;
+}
+
+.btn_color_transparent:hover {
+    border-color: #f2f2f2;
+    color: #f2f2f2;
+}
+
+.btn_color_transparent:focus,
+.btn_color_transparent:active {
+    border-color: #ededed;
+    color: #ededed;
+}
+
+.btn__text {
+    float: left;
+}

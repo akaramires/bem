@@ -2,6 +2,11 @@
 
 }
 
+.menu:focus,
+.menu:active {
+    outline: none;
+}
+
 .menu__control {
 
 }
@@ -24,7 +29,7 @@
     position: absolute;
     content: '';
     left: 0;
-    top: 28px;
+    top: 24px;
     background: #424242;
 }
 

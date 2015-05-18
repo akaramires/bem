@@ -1,5 +1,7 @@
 .navbar {
     background: #fdfdfd;
+    min-height: 0;
+    margin-bottom: 0;
 }
 
 .navbar_type_fix {
