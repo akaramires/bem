@@ -74,7 +74,8 @@
                                             }
                                         },
                                         {
-                                            block  : 'input-group',
+                                            block  : 'input',
+                                            elem   : 'group',
                                             attrs  : {
                                                 'data-toggle' : 'popover',
                                                 'data-trigger': 'focus',
@@ -89,6 +90,9 @@
                                                         placeholder: 'Enter your email Address'
                                                     },
                                                     mix  : [
+                                                        {
+                                                            block: 'input'
+                                                        },
                                                         {
                                                             block: 'header-form',
                                                             elem : 'input'
@@ -251,7 +255,7 @@
                                                 content: {
                                                     elem   : 'title',
                                                     tag    : 'span',
-                                                    content: 'News &#038; View'
+                                                    content: 'News & Views'
                                                 }
                                             }
                                         },
@@ -398,7 +402,7 @@
                                                             content: [
                                                                 {
                                                                     elem   : 'text',
-                                                                    content: 'Start your Assessment'
+                                                                    content: 'Watch Video'
                                                                 },
                                                                 {
                                                                     block: 'icon',

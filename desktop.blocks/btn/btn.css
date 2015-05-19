@@ -1,10 +1,14 @@
 .btn {
     outline: 0;
+    font-size: 16px;
 }
 
 .btn_color_white {
-    border-color: #fff;
-    color: #fff;
+    background: #f7f7f7;
+    color: #fd1a1d;
+    font-size: 12px;
+    padding: 3px 12px;
+    z-index: 1 !important;
 }
 
 .btn_color_gray {
