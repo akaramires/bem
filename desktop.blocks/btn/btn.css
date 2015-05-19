@@ -95,3 +95,61 @@
 .btn__text {
     float: left;
 }
+
+.btn-wrap {
+    margin-bottom: 20px !important;
+}
+
+.btn-wrap_type_learn {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -moz-background-clip: padding;
+    border-radius: 4px 0 0 4px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: inline-block;
+    margin: 40px auto 60px;
+    border: 1px solid #bd0000;
+    cursor: pointer;
+}
+
+.btn-wrap__btn {
+    font-size: 13px;
+    font-weight: 700;
+    color: #bd0000;
+    padding: 2px 50px 0;
+    line-height: 38px;
+    display: inline-block;
+    float: left;
+}
+
+.btn-wrap__btn_size_big {
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.btn-wrap__arrow {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+    background: #bd0000;
+}
+
+.btn-wrap__arrow_size_big {
+    width: 56px;
+    height: 56px;
+}
+
+.btn_learn__icon {
+    color: #fff;
+    font-size: 26px;
+    vertical-align: -16px;
+}
+
+.btn_learn__icon_size_big {
+    font-size: 56px;
+    line-height: 56px;
+}
+

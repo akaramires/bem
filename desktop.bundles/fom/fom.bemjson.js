@@ -900,6 +900,51 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    elem   : 'width_100',
+                                    content: [
+                                        {
+                                            block  : 'btn-wrap',
+                                            mods   : {
+                                                type: 'learn'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'btn',
+                                                    tag    : 'a',
+                                                    mods   : {
+                                                        size: 'big'
+                                                    },
+                                                    content: 'Learn why Frame of Mind Coaching is right for you'
+                                                },
+                                                {
+                                                    elem   : 'arrow',
+                                                    mods   : {
+                                                        size: 'big'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block: 'icon',
+                                                            tag  : 'i',
+                                                            mix  : [
+                                                                {
+                                                                    block: 'btn_learn',
+                                                                    elem : 'icon',
+                                                                    mods : {
+                                                                        size: 'big'
+                                                                    }
+                                                                }
+                                                            ],
+                                                            mods : {
+                                                                type: 'arrow-right'
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
