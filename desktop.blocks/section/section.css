@@ -1,0 +1,23 @@
+.section {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.section__container {
+}
+
+.section__title {
+    font-family: 'Kettering 105 W00', sans-serif;
+    font-size: 30px;
+    color: #bd0000;
+    text-align: center;
+    margin: 50px 0 10px;
+}
+
+.section__txt {
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0 0 40px;
+}

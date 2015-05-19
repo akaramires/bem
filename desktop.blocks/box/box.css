@@ -1,0 +1,70 @@
+.box {
+    background: #F5F2EC;
+    display: inline-block;
+    width: 100%;
+    min-height: 720px;
+}
+
+.box_type_image {
+
+}
+
+.box_location_top {
+
+}
+
+.box__image-wrap {
+    width: 100%;
+    position: relative;
+}
+
+.box__image {
+}
+
+.box__image_size_big {
+    width: 100%;
+    min-height: 175px;
+}
+
+.box__title {
+    font-family: 'Kettering 105 W00', sans-serif;
+    color: #bd0000;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.box__title_size_24 {
+    font-size: 24px;
+    margin: 20px 0 5px;
+    font-weight: 200;
+}
+
+.box__icon {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    color: rgba(245, 245, 245, .8);
+    font-size: 100px;
+    margin: -50px 0 0 -50px;
+}
+
+.box__txt {
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0 0 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.box__txt p {
+    margin: 0 0 10px;
+    padding: 0;
+    border: 0;
+    font-family: arial, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444444;
+    text-align: left;
+}
