@@ -100,7 +100,7 @@
     margin-bottom: 20px !important;
 }
 
-.btn-wrap_type_learn {
+.btn-wrap_type_big {
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     -moz-background-clip: padding;
@@ -121,6 +121,12 @@
     line-height: 38px;
     display: inline-block;
     float: left;
+}
+
+.btn-wrap__btn:hover {
+    border-color: #d70000;
+    color: #d70000;
+    text-decoration: none;
 }
 
 .btn-wrap__btn_size_big {

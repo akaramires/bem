@@ -907,7 +907,7 @@
                                         {
                                             block  : 'btn-wrap',
                                             mods   : {
-                                                type: 'learn'
+                                                type: 'big'
                                             },
                                             content: [
                                                 {
@@ -943,6 +943,283 @@
                                                     ]
                                                 }
                                             ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'quote',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'header',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'author-photo',
+                            content: [
+                                {
+                                    elem : 'photo',
+                                    tag  : 'img',
+                                    attrs: {
+                                        src: 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JO.jpg'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'txt',
+                            content: [
+                                {
+                                    elem   : 'body',
+                                    content: 'It is very easy to write a testimonial right after a course ends and while you’re feeling good about what you have learned, journaled about, and discovered about yourself. But, a true testimonial comes weeks or months later when what you have learned becomes a conscious reflection, more than you eve... '
+                                },
+                                {
+                                    elem   : 'author',
+                                    content: '- Jeanne D’Ottavi'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'section',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'header',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'title',
+                            content: 'Our Team'
+                        },
+                        {
+                            elem   : 'txt',
+                            mix    : [
+                                {
+                                    block: 'narrow-160'
+                                },
+                                {
+                                    block: 'text',
+                                    elem : 'center'
+                                }
+                            ],
+                            content: 'Each and every member of the FOM Coaching team has started by going through our 1-1 coaching program as a client. The best way to describe them is through the core values which we commit to living and breathing on a daily basis.'
+                        },
+                        {
+                            block  : 'row',
+                            mix    : [
+                                {
+                                    block: 'section',
+                                    elem : 'box'
+                                }
+                            ],
+                            content: [
+                                {
+                                    block  : 'cols',
+                                    mix    : [
+                                        {
+                                            block: 'col-lg-6 col-md-6 col-sm-12'
+                                        },
+                                    ],
+                                    content: [
+                                        {
+                                            elem : 'img-responsive',
+                                            tag  : 'img',
+                                            mix  : [
+                                                {
+                                                    block: 'section',
+                                                    elem : 'centered'
+                                                }
+                                            ],
+                                            attrs: {
+                                                src: 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/our_team.jpg'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    block  : 'cols',
+                                    mix    : [
+                                        {
+                                            block: 'col-lg-6 col-md-6 col-sm-12'
+                                        },
+                                    ],
+                                    content: [
+                                        {
+                                            elem   : 'title',
+                                            mix    : [
+                                                {
+                                                    block: 'section',
+                                                    elem : 'title',
+                                                    mods : {
+                                                        size: 24
+                                                    }
+                                                },
+                                                {
+                                                    block: 'hide-on-small'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    elem : 'left'
+                                                }
+                                            ],
+                                            content: 'Frame of Mind Coaching\'s Core Values'
+                                        },
+                                        {
+                                            elem   : 'txt',
+                                            mods   : {
+                                                size : 'small',
+                                                style: 'italic'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'red',
+                                                    content: 'GENEROSITY ',
+                                                    tag    : 'span'
+                                                },
+                                                '- Giving whatever we can to our clients exactly when they need it the most.'
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'txt',
+                                            mods   : {
+                                                size : 'small',
+                                                style: 'italic'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'red',
+                                                    content: 'IMPACT THROUGH BOLD LEADERSHIP ',
+                                                    tag    : 'span'
+                                                },
+                                                '- Leading by example AND coaching leaders to have a profound impact on every community they touch.'
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'txt',
+                                            mods   : {
+                                                size : 'small',
+                                                style: 'italic'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'red',
+                                                    content: 'INTIMACY ',
+                                                    tag    : 'span'
+                                                },
+                                                '- Building an unprecedented level of trust with our clients.'
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'txt',
+                                            mods   : {
+                                                size : 'small',
+                                                style: 'italic'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'red',
+                                                    content: 'INNOVATION ',
+                                                    tag    : 'span'
+                                                },
+                                                '- Developing and delivering the most leading edge and powerful approaches to coaching.'
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'txt',
+                                            mods   : {
+                                                size : 'small',
+                                                style: 'italic'
+                                            },
+                                            content: [
+                                                {
+                                                    elem   : 'red',
+                                                    content: 'PERSONAL DEVELOPMENT ',
+                                                    tag    : 'span'
+                                                },
+                                                '- As FOM Coaches, we are committed to our own personal and professional development as we simultaneously take a stand for the personal development of our clients.'
+                                            ]
+                                        },
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'section',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'header',
+                            elem : 'container'
+                        },
+                        {
+                            block: 'text',
+                            elem : 'center'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'title',
+                            content: 'Get a Taste of our Frame of Mind Coaching experience'
+                        },
+                        {
+                            block  : 'btn-wrap',
+                            mods   : {
+                                type: 'big'
+                            },
+                            content: [
+                                {
+                                    elem   : 'btn',
+                                    tag    : 'a',
+                                    mods   : {
+                                        size: 'big'
+                                    },
+                                    content: 'Start your personalized Assessment'
+                                },
+                                {
+                                    elem   : 'arrow',
+                                    mods   : {
+                                        size: 'big'
+                                    },
+                                    content: [
+                                        {
+                                            block: 'icon',
+                                            tag  : 'i',
+                                            mix  : [
+                                                {
+                                                    block: 'btn_learn',
+                                                    elem : 'icon',
+                                                    mods : {
+                                                        size: 'big'
+                                                    }
+                                                }
+                                            ],
+                                            mods : {
+                                                type: 'arrow-right'
+                                            }
                                         }
                                     ]
                                 }
