@@ -9,7 +9,7 @@
     head   : [
         {
             elem: 'css',
-            url : 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'
+            url : 'http://yastatic.net/bootstrap/3.3.1/css/bootstrap.min.css'
         },
         {
             elem: 'css',
@@ -19,10 +19,35 @@
     scripts: [
         {
             elem: 'js',
+            url : 'http://yastatic.net/jquery/2.1.3/jquery.min.js'
+        },
+        {
+            elem: 'js',
+            url : 'http://yastatic.net/bootstrap/3.3.1/js/bootstrap.min.js'
+        },
+        {
+            elem: 'js',
             url : '_fom.js'
         }
     ],
     content: [
+        {
+            elem   : 'scroller',
+            content: [
+                {
+                    block: 'icon',
+                    mix  : [
+                        {
+                            block: 'scroller',
+                            elem : 'icon'
+                        }
+                    ],
+                    mods : {
+                        type: 'arrow-down-thin'
+                    }
+                }
+            ]
+        },
         {
             block  : 'header',
             content: [
@@ -1717,6 +1742,104 @@
                                             content: '&#169; '
                                         },
                                         'Frame of Mind Coaching 2015'
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'modal',
+            attrs  : {
+                id               : 'modalThanks',
+                tabindex         : '-1',
+                role             : 'dialog',
+                'aria-labelledby': 'myModalLabel',
+                'aria-hidden'    : 'true'
+            },
+            mix    : [
+                {
+                    block: 'fade'
+                }
+            ],
+            content: [
+                {
+                    block  : 'modal-dialog',
+                    content: [
+                        {
+                            block  : 'modal-content',
+                            content: [
+                                {
+                                    block  : 'modal-header',
+                                    content: [
+                                        {
+                                            block  : 'close',
+                                            attrs  : {
+                                                'data-dismiss': 'modal'
+                                            },
+                                            content: [
+                                                {
+                                                    tag    : 'span',
+                                                    content: '&times;'
+                                                },
+                                                {
+                                                    block  : 'sr-only',
+                                                    content: 'Close'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, {
+                                    block  : 'modal-body',
+                                    content: [
+                                        {
+                                            block: 'section',
+                                            mix  : [
+                                                {
+                                                    block  : 'modal-form',
+                                                    content: [
+                                                        {
+                                                            block  : 'container',
+                                                            content: [
+                                                                {
+                                                                    block  : 'row',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'cols',
+                                                                            mix    : [
+                                                                                {
+                                                                                    block: 'col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1'
+                                                                                }
+                                                                            ],
+                                                                            content: [
+                                                                                {
+                                                                                    block  : 'title',
+                                                                                    content: 'Thank you for signing up'
+                                                                                },
+                                                                                {
+                                                                                    block: 'txt',
+                                                                                    mix: [
+                                                                                        {
+                                                                                            block: 'text',
+                                                                                            elem: 'center'
+                                                                                        }, {
+                                                                                            block: 'ind-bot-20'
+                                                                                        }
+                                                                                    ],
+                                                                                    content: 'Click below to begin your journey!'
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
                                     ]
                                 }
                             ]

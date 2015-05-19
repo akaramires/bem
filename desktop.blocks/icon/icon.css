@@ -126,3 +126,7 @@
 .icon_color_white {
     color: #fff;
 }
+
+.icon:after {
+    display: none;
+}

@@ -140,3 +140,26 @@
     min-width: 300px;
     margin: 0;
 }
+
+.page__scroller {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.page__scroller .icon {
+    font-size: 36px;
+    color: #FFF;
+    background: #ebe4dc;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    display: block;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}

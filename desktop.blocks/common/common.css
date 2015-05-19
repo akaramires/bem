@@ -1,6 +1,10 @@
 .common {
 }
 
+.common__padding-bottom-20 {
+    padding-bottom: 40px;
+}
+
 .common__padding-bottom-40 {
     padding-bottom: 40px;
 }
