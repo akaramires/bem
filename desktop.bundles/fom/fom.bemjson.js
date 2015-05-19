@@ -162,6 +162,7 @@
                         },
                         {
                             elem   : 'logo',
+                            tag    : 'a',
                             attrs  : {
                                 title: 'Frame of Mind'
                             },
@@ -472,6 +473,47 @@
                                             }
                                         }
                                     ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'quote',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'header',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'author-photo',
+                            content: [
+                                {
+                                    elem : 'photo',
+                                    tag  : 'img',
+                                    attrs: {
+                                        src: 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JM.jpg'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'txt',
+                            content: [
+                                {
+                                    elem   : 'body',
+                                    content: 'I always have felt things will be better when I get to a certain part of my life and return back to “Normal”. I was at the mercy of the waves of life and sometimes I would be knocked down repeatedly by those waves. I always felt as if I was yelling at everyone, biting their heads off (or wanting to)...'
+                                },
+                                {
+                                    elem   : 'author',
+                                    content: '- Jilian McDermott'
                                 }
                             ]
                         }
