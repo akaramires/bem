@@ -1625,6 +1625,101 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            elem   : 'bottom',
+                            mix    : [
+                                {
+                                    block: 'text',
+                                    elem : 'center'
+                                }
+                            ],
+                            content: [
+                                {
+                                    elem   : 'social',
+                                    content: [
+                                        {
+                                            elem   : 'item',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mix  : [
+                                                        {
+                                                            block: 'footer-social',
+                                                            elem : 'icon'
+                                                        }
+                                                    ],
+                                                    mods : {
+                                                        type: 'tw'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mix  : [
+                                                        {
+                                                            block: 'footer-social',
+                                                            elem : 'icon'
+                                                        }
+                                                    ],
+                                                    mods : {
+                                                        type: 'fb'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mix  : [
+                                                        {
+                                                            block: 'footer-social',
+                                                            elem : 'icon'
+                                                        }
+                                                    ],
+                                                    mods : {
+                                                        type: 'in'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'item',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mix  : [
+                                                        {
+                                                            block: 'footer-social',
+                                                            elem : 'icon'
+                                                        }
+                                                    ],
+                                                    mods : {
+                                                        type: 'you-tube'
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem   : 'copy',
+                                    content: [
+                                        {
+                                            elem   : 'arial',
+                                            tag    : 'span',
+                                            content: '&#169; '
+                                        },
+                                        'Frame of Mind Coaching 2015'
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
