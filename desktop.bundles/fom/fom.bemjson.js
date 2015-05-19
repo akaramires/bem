@@ -30,6 +30,9 @@
                     elem   : 'container',
                     mix    : [
                         {
+                            block: 'container'
+                        },
+                        {
                             block: 'text',
                             elem : 'center'
                         }
@@ -46,8 +49,7 @@
                                     block  : 'form',
                                     mix    : [
                                         {
-                                            block: 'header',
-                                            elem : 'form'
+                                            block: 'header-form'
                                         }
                                     ],
                                     mods   : {
@@ -58,7 +60,11 @@
                                             block: 'icon',
                                             mix  : [
                                                 {
-                                                    block: 'form_type_envelope',
+                                                    block: 'header-form',
+                                                    elem : 'icon'
+                                                },
+                                                {
+                                                    block: 'form',
                                                     elem : 'icon'
                                                 }
                                             ],
@@ -78,45 +84,29 @@
                                                 {
                                                     elem : 'input',
                                                     tag  : 'input',
-                                                    mods : {
-                                                        form: 'control'
-                                                    },
                                                     attrs: {
+                                                        type       : 'text',
                                                         placeholder: 'Enter your email Address'
-                                                    }
+                                                    },
+                                                    mix  : [
+                                                        {
+                                                            block: 'header-form',
+                                                            elem : 'input'
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    block  : 'input-group-btn',
-                                                    mix    : [
+                                                    block  : 'btn-group',
+                                                    content: [
                                                         {
-                                                            block: 'header',
-                                                            elem : 'input-group-btn'
-                                                        }
-                                                    ],
-                                                    content: {
-                                                        block  : 'btn',
-                                                        mix    : [
-                                                            {
-                                                                block: 'input-group-btn',
-                                                                elem : 'btn',
-                                                                mods : {
-                                                                    color: 'white'
-                                                                }
+                                                            tag    : 'a',
+                                                            block  : 'btn',
+                                                            mods   : {
+                                                                color: 'white'
                                                             },
-                                                            {
-                                                                block: 'header',
-                                                                elem : 'btn'
-                                                            }
-                                                        ],
-                                                        tag    : 'a',
-                                                        mods   : {
-                                                            color: 'white'
-                                                        },
-                                                        attrs  : {
-                                                            type: 'button'
-                                                        },
-                                                        content: 'Sign Up'
-                                                    }
+                                                            content: 'Sign Up!'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -144,8 +134,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -317,8 +306,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -472,8 +460,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -516,8 +503,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -959,8 +945,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -1000,8 +985,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         }
                     ],
                     content: [
@@ -1172,8 +1156,7 @@
                     elem   : 'container',
                     mix    : [
                         {
-                            block: 'header',
-                            elem : 'container'
+                            block: 'container'
                         },
                         {
                             block: 'text',
@@ -1186,40 +1169,454 @@
                             content: 'Get a Taste of our Frame of Mind Coaching experience'
                         },
                         {
-                            block  : 'btn-wrap',
-                            mods   : {
-                                type: 'big'
-                            },
+                            elem   : 'width_100',
+                            mix    : [
+                                {
+                                    block: 'common',
+                                    elem : 'padding-bottom-40'
+                                }
+                            ],
                             content: [
                                 {
-                                    elem   : 'btn',
-                                    tag    : 'a',
+                                    block  : 'btn-wrap',
                                     mods   : {
-                                        size: 'big'
-                                    },
-                                    content: 'Start your personalized Assessment'
-                                },
-                                {
-                                    elem   : 'arrow',
-                                    mods   : {
-                                        size: 'big'
+                                        type: 'big'
                                     },
                                     content: [
                                         {
-                                            block: 'icon',
-                                            tag  : 'i',
-                                            mix  : [
+                                            elem   : 'btn',
+                                            tag    : 'a',
+                                            mods   : {
+                                                size: 'big'
+                                            },
+                                            content: 'Start your personalized Assessment'
+                                        },
+                                        {
+                                            elem   : 'arrow',
+                                            mods   : {
+                                                size: 'big'
+                                            },
+                                            content: [
                                                 {
-                                                    block: 'btn_learn',
-                                                    elem : 'icon',
+                                                    block: 'icon',
+                                                    tag  : 'i',
+                                                    mix  : [
+                                                        {
+                                                            block: 'btn_learn',
+                                                            elem : 'icon',
+                                                            mods : {
+                                                                size: 'big'
+                                                            }
+                                                        }
+                                                    ],
                                                     mods : {
-                                                        size: 'big'
+                                                        type: 'arrow-right'
                                                     }
                                                 }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block  : 'footer',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [
+                        {
+                            block: 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'top',
+                            content: [
+                                {
+                                    block  : 'row',
+                                    content: [
+                                        {
+                                            elem   : 'cols',
+                                            mix    : [
+                                                {
+                                                    block: 'col-lg-2 col-md-3 col-sm-3'
+                                                },
                                             ],
-                                            mods : {
-                                                type: 'arrow-right'
-                                            }
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer',
+                                                            elem : 'title'
+                                                        }
+                                                    ],
+                                                    content: 'Services'
+                                                },
+                                                {
+                                                    block  : 'footer-menu',
+                                                    mix    : [
+                                                        {
+                                                            block: 'menu'
+                                                        }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Coaching'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Certification'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'cols',
+                                            mix    : [
+                                                {
+                                                    block: 'col-lg-2 col-md-3 col-sm-3'
+                                                },
+                                            ],
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer',
+                                                            elem : 'title'
+                                                        }
+                                                    ],
+                                                    content: 'About Us'
+                                                },
+                                                {
+                                                    block  : 'footer-menu',
+                                                    mix    : [
+                                                        {
+                                                            block: 'menu'
+                                                        }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Meet Our Team'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Testimonials'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Privacy'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'cols',
+                                            mix    : [
+                                                {
+                                                    block: 'col-lg-2 col-md-3 col-sm-3'
+                                                },
+                                            ],
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer',
+                                                            elem : 'title'
+                                                        }
+                                                    ],
+                                                    content: 'News'
+                                                },
+                                                {
+                                                    block  : 'footer-menu',
+                                                    mix    : [
+                                                        {
+                                                            block: 'menu'
+                                                        }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'Media'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'News & Views'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'cols',
+                                            mix    : [
+                                                {
+                                                    block: 'col-lg-2 col-md-3 col-sm-3'
+                                                },
+                                            ],
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer',
+                                                            elem : 'title'
+                                                        }
+                                                    ],
+                                                    content: 'Connect'
+                                                },
+                                                {
+                                                    block  : 'footer-menu',
+                                                    mix    : [
+                                                        {
+                                                            block: 'menu'
+                                                        }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: '416-747-6900'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            block  : 'menu',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-menu',
+                                                                    elem : 'item'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    tag    : 'a',
+                                                                    attrs  : {
+                                                                        href: '#'
+                                                                    },
+                                                                    content: 'contact'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'cols',
+                                            mix    : [
+                                                {
+                                                    block: 'col-lg-4 col-md-6 col-lg-offset-0 col-md-offset-3 col-sm-offset-3 col-sm-9'
+                                                },
+                                            ],
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer',
+                                                            elem : 'title'
+                                                        }
+                                                    ],
+                                                    content: 'Sign up for our newsletter'
+                                                },
+                                                {
+                                                    block  : 'form',
+                                                    mix    : [
+                                                        {
+                                                            block: 'footer-form'
+                                                        }
+                                                    ],
+                                                    mods   : {
+                                                        type: 'envelope'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block: 'icon',
+                                                            mix  : [
+                                                                {
+                                                                    block: 'form',
+                                                                    elem : 'icon'
+                                                                },
+                                                                {
+                                                                    block: 'footer-form',
+                                                                    elem : 'icon'
+                                                                },
+                                                                {
+                                                                    block: 'footer-form-type',
+                                                                    elem : 'envelope'
+                                                                }
+                                                            ],
+                                                            mods : {
+                                                                type: 'envelope'
+                                                            }
+                                                        },
+                                                        {
+                                                            elem : 'input',
+                                                            tag  : 'input',
+                                                            mods : {
+                                                                type: 'txt'
+                                                            },
+                                                            mix  : [
+                                                                {
+                                                                    block: 'footer-form',
+                                                                    elem : 'input'
+                                                                },
+                                                                {
+                                                                    block: 'form-icon',
+                                                                    elem : 'input'
+                                                                }
+                                                            ],
+                                                            attrs: {
+                                                                placeholder: 'Enter your email Address'
+                                                            }
+                                                        },
+                                                        {
+                                                            tag    : 'a',
+                                                            block  : 'btn',
+                                                            mods   : {
+                                                                color: 'red'
+                                                            },
+                                                            mix    : [
+                                                                {
+                                                                    block: 'footer-form',
+                                                                    elem : 'btn'
+                                                                }
+                                                            ],
+                                                            content: 'Sign Up'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

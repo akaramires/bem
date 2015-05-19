@@ -1,0 +1,70 @@
+.footer {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    text-align: left;
+    background: #F2F0EA;
+}
+
+.footer__container {
+
+}
+
+.footer__top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #969696;
+}
+
+.footer__title {
+    font-family: 'Kettering 105 W00', sans-serif;
+    font-size: 18px;
+    color: #bd0000;
+    font-weight: 300;
+    margin: 20px 0 10px;
+}
+
+.footer-menu {
+    display: inline-block;
+    float: left;
+}
+
+.footer-menu__item {
+    display: block;
+    padding: 0;
+    float: none;
+}
+
+.footer-menu__item a {
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    text-decoration: none !important;
+    font-size: 13pt;
+    color: #424242;
+}
+
+.footer-menu__item a:hover {
+    color: #171717;
+}
+
+.footer-form {
+    margin: 5px 0 0;
+    display: inline-block;
+}
+
+.footer-form__icon {
+
+}
+
+.footer-form__input {
+
+}
+
+.footer-form__btn {
+    padding: 7px 16px;
+    margin: 0 0 0 10px;
+}
+
+.footer-form-type__envelope {
+
+}

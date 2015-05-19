@@ -17,22 +17,6 @@
     padding: 22px 8px 18px;
 }
 
-.menu__item:last-child {
-    position: relative;
-    margin-left: 10px;
-    padding-left: 20px;
-}
-
-.menu__item:last-child:after {
-    width: 1px;
-    height: 17px;
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 24px;
-    background: #424242;
-}
-
 .menu__link {
     padding: 3px;
     color: #424242;

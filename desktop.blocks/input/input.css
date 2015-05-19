@@ -1,0 +1,8 @@
+.input {
+}
+
+.input__group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
