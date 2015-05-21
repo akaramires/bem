@@ -1766,69 +1766,98 @@
             ],
             content: [
                 {
-                    block  : 'modal-dialog',
+                    elem   : 'header',
                     content: [
                         {
-                            block  : 'modal-content',
+                            elem   : 'close',
+                            tag    : 'button',
+                            attrs  : {
+                                'data-dismiss': 'modal'
+                            },
                             content: [
                                 {
-                                    block  : 'modal-header',
+                                    tag    : 'span',
+                                    content: '&times;'
+                                },
+                                {
+                                    block  : 'sr-only',
+                                    content: 'Close'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elem   : 'body',
+                    content: [
+                        {
+                            elem   : 'section',
+                            content: [
+                                {
+                                    block  : 'form',
                                     content: [
                                         {
-                                            block  : 'close',
-                                            attrs  : {
-                                                'data-dismiss': 'modal'
-                                            },
+                                            elem   : 'container',
                                             content: [
                                                 {
-                                                    tag    : 'span',
-                                                    content: '&times;'
-                                                },
-                                                {
-                                                    block  : 'sr-only',
-                                                    content: 'Close'
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }, {
-                                    block  : 'modal-body',
-                                    content: [
-                                        {
-                                            block: 'section',
-                                            mix  : [
-                                                {
-                                                    block  : 'modal-form',
+                                                    block  : 'row',
                                                     content: [
                                                         {
-                                                            block  : 'container',
+                                                            block  : 'cols',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1'
+                                                                }
+                                                            ],
                                                             content: [
                                                                 {
-                                                                    block  : 'row',
+                                                                    elem   : 'title',
+                                                                    block  : 'modal',
+                                                                    content: 'Thank you for signing up'
+                                                                },
+                                                                {
+                                                                    elem   : 'text',
+                                                                    block  : 'modal',
+                                                                    mix    : [
+                                                                        {
+                                                                            block: 'text',
+                                                                            elem : 'center'
+                                                                        }, {
+                                                                            block: 'common',
+                                                                            elem : 'padding-bottom-20'
+                                                                        }
+                                                                    ],
+                                                                    content: 'Click below to begin your journey!'
+                                                                },
+                                                                {
+                                                                    elem   : 'form-wrap',
+                                                                    block  : 'modal',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'cols',
-                                                                            mix    : [
-                                                                                {
-                                                                                    block: 'col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1'
-                                                                                }
-                                                                            ],
+                                                                            block  : 'form',
                                                                             content: [
                                                                                 {
-                                                                                    block  : 'title',
-                                                                                    content: 'Thank you for signing up'
-                                                                                },
-                                                                                {
-                                                                                    block: 'txt',
-                                                                                    mix: [
+                                                                                    elem   : 'control-group',
+                                                                                    content: [
                                                                                         {
-                                                                                            block: 'text',
-                                                                                            elem: 'center'
-                                                                                        }, {
-                                                                                            block: 'ind-bot-20'
+                                                                                            block  : 'btn',
+                                                                                            mods   : {
+                                                                                                color: 'red',
+                                                                                                type : 'submit'
+                                                                                            },
+                                                                                            content: 'Start your personalized Assessment'
+                                                                                        },
+                                                                                        {
+                                                                                            block  : 'btn',
+                                                                                            mods   : {
+                                                                                                color: 'red'
+                                                                                            },
+                                                                                            attrs  : {
+                                                                                                'data-dismiss': 'modal'
+                                                                                            },
+                                                                                            content: 'Cancel'
                                                                                         }
-                                                                                    ],
-                                                                                    content: 'Click below to begin your journey!'
+                                                                                    ]
                                                                                 }
                                                                             ]
                                                                         }
