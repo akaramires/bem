@@ -1,10 +1,14 @@
 .text {
 }
 
+.text__left {
+    text-align: left;
+}
+
 .text__center {
     text-align: center;
 }
 
-.text__left {
-    text-align: left!important;
+.text__right {
+    text-align: right;
 }

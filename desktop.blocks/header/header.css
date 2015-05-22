@@ -1,71 +1,36 @@
 .header {
+
+}
+
+.header_bg_red {
     background: #bd0000;
+}
+
+.header__subscribe {
     height: 47px;
 }
 
-.header__container_text_center {
-    text-align: center;
-}
-
-.header__title {
-    color: #fff;
-    font-size: 14px;
-    display: inline-block;
-    margin: 0;
-    vertical-align: -13px;
-}
-
 .header__navbar {
-    background: #fdfdfd;
+
 }
 
-.header__btn_gray {
-    float: right;
-    margin: 15px 0 0 17px;
+.header__container {
+    line-height: 47px;
 }
 
-.header__menu {
+.header__content {
     display: inline-block;
-    float: right;
+    font-size: 14px;
+    margin: 0;
 }
 
-.header__menu .menu__item:last-child {
-    position: relative;
-    margin-left: 10px;
-    padding-left: 20px;
+.header__content_color_white {
+    color: #ffffff;
 }
 
-.header__menu .menu__item:last-child:after {
-    width: 1px;
-    height: 17px;
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 24px;
-    background: #424242;
-}
-
-.header-form {
+.header__form {
     display: inline-block;
-    margin: 0 0 0 40px;
+    margin: -1px 0 0 45px;
     width: 260px;
-    vertical-align: -20px;
-}
-
-.header-form .header-form__icon {
-    top: 7px;
-    left: 5px;
-    font-size: 12px;
-    color: #fff;
-}
-
-.header-form .header-form__input {
-    padding: 5px 0 4px 26px;
-    line-height: 1;
-    display: table-cell;
-}
-
-.header-form .btn {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    vertical-align: top;
 }

@@ -1,0 +1,20 @@
+.control-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.control-group .input,
+.control-group .button {
+    display: table-cell;
+}
+
+.control-group .input:last-of-type,
+.control-group .button:last-of-type {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.control-group_icon_envelope {
+
+}

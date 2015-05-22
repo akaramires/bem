@@ -1,0 +1,37 @@
+.button {
+}
+
+.button__control {
+    border: none;
+    white-space: nowrap;
+}
+
+.button__text {
+
+}
+
+.button_size_s {
+    font-size: 12px;
+    padding: 6px 12px 5px;
+}
+
+.button_color_red {
+    color: #fd1a1d;
+}
+
+.button_bg_white {
+    background: #f7f7f7;
+}
+
+.button__control.active,
+.button__control:active,
+.button__control:focus {
+    outline: 0;
+}
+
+.button__control:active {
+    color: #bd0000;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}

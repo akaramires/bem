@@ -3,19 +3,10 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
 }
 
-.container:before,
-.container:after {
-    content: " ";
-    display: table;
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
-
-.container:before {
-}
-
-.container:after {
-    clear: both;
-}
-

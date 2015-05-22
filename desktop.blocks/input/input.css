@@ -1,35 +1,39 @@
 .input {
-    display: block;
-    width: 100%;
-    padding: 6px 12px;
-    line-height: 1.42857143;
-    color: #fff;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid #fff;
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 0;
-    height: 25px;
-    font-size: 12px;
+    outline: none;
+    line-height: 1;
 }
 
-.input__group {
-    position: relative;
-    display: table;
-    border-collapse: separate;
+.input_size_s {
+    font-size: 12px;
+    height: 25px;
 }
-.input__group .input {
+
+.input__box {
+
+}
+
+.input__control {
     position: relative;
-    z-index: 2;
-    float: left;
     width: 100%;
     margin-bottom: 0;
+    border: 1px solid white;
 }
 
-.input__input {
+.input_size_s .input__control {
+    padding: 5px 4px 4px;
+    font-size: 12px;
+    width: 182px;
+}
 
+.input_type_transparent .input__control {
+    color: #fff;
+    background-color: transparent;
+}
+
+.input__control:active {
+    outline: none;
+}
+
+.input__control:focus {
+    outline: none;
 }
