@@ -1,0 +1,47 @@
+.box {
+    background: #F5F2EC;
+    display: inline-block;
+    width: 100%;
+    min-height: 760px;
+}
+
+.box__cover {
+    width: 100%;
+    position: relative;
+}
+
+.box__cover .image {
+    width: 100%;
+    min-height: 175px;
+    vertical-align: middle;
+}
+
+.box__title {
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Kettering 105 W00', sans-serif;
+    color: #bd0000;
+    font-size: 24px;
+    margin: 20px 0 5px;
+}
+
+.box__content {
+    line-height: 130%;
+    margin: 0 0 40px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.box__content p {
+    font-family: arial, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding: 0;
+    color: #444444;
+    line-height: 22px;
+}
+
+.box__content .image {
+    width: 100%;
+}

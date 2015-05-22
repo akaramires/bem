@@ -381,7 +381,7 @@
                                 {
                                     block: 'image',
                                     url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JF.jpg',
-                                    title: 'Все подробности на bem.info'
+                                    title: 'Joanne Foxxe'
                                 }
                             ]
                         },
@@ -443,7 +443,229 @@
                         {
                             elem   : 'body',
                             block  : 'section',
-                            content: []
+                            content: [
+                                {
+                                    block  : 'row',
+                                    content: [
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    block  : 'row',
+                                                    content: [
+                                                        {
+                                                            elem   : 'col-6',
+                                                            content: [
+                                                                {
+                                                                    block  : 'box',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'cover',
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/Coaches-300x163.jpg',
+                                                                                    title: 'Coaches'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Coaches'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: [
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'Our coaches are phenomenal.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'FOM Coaches are at the top of their game and in a class by themselves. They are prepared. They are purposeful. They artfully walk you through the coaching process. They are by your side the entire time.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'They Live It.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'They Breathe It.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'And they will help you transform at a mind-blowing pace.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'It takes a particular kind of coach to make the grade.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'And it takes a particular type of client to meet the challenge.'
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'col-6',
+                                                            content: [
+                                                                {
+                                                                    block  : 'box',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'cover',
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/2-300x200.jpg',
+                                                                                    title: 'Process'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Process'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: [
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: '10 weeks, 10 calls, 10 hours of personal recordings and 70 days of journaling.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    attrs  : {
+                                                                                        style: 'font-weight: bold;'
+                                                                                    },
+                                                                                    content: 'Why is journaling so important?'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'It’s intense. It’s dynamic. It’s deliberate. It’s about driving results.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'Our process is designed to create an unprecedented level of personal insight necessary for clients to experience a radical change at an accelerated rate.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'This is not for people who are scared to move forward or to try new things. It’s for people who are strong-minded and prepared to take a serious look at themselves in order to experience monumental results.'
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    block  : 'row',
+                                                    content: [
+                                                        {
+                                                            elem   : 'col-6',
+                                                            content: [
+                                                                {
+                                                                    block  : 'box',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'cover',
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/3-300x200.jpg',
+                                                                                    title: 'Platform'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Platform'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: [
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'In between coaching sessions you are engaged with your coach via our online journaling platform – JournalEngine™. JournalEngine™ changes the landscape of coaching by keeping you intimately connected to your coach in between coaching sessions, and also keeps you deeply engaged in the implementation of the concepts and principles learned throughout your coaching program.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'JournalEngine™ is the gymnasium for your mind.  This platform will enable you to keep working on your Frame of Mind long after your coaching process is complete.'
+                                                                                },
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/02/JE-logo-new.png',
+                                                                                    title: 'JournalEngine'
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'col-6',
+                                                            content: [
+                                                                {
+                                                                    block  : 'box',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'cover',
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/Plant-300x199.jpg',
+                                                                                    title: 'Focus'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Focus'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: [
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'Very simply, Frame of Mind Coaching is laser-focused on your mindset.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'We know that the one thing getting in your way is YOU.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'Your thinking, your values, your beliefs, your experiences and your perspectives all come together to form your current results. By honing in on your thinking, epic transformation takes place in a very short period of time. The results ripple across every aspect of your life, creating colossal changes from relationships, to health, to revenue.'
+                                                                                },
+                                                                                {
+                                                                                    tag    : 'p',
+                                                                                    content: 'The most dramatic and tangible change is that our clients are overwhelmingly happier as a result of coaching.'
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -532,7 +754,9 @@
                         {
                             elem   : 'body',
                             block  : 'section',
-                            content: []
+                            content: [
+                                {}
+                            ]
                         }
                     ]
                 }
