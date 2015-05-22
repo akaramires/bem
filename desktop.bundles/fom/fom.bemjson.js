@@ -436,7 +436,7 @@
                             content: 'Why Frame of Mind Coaching?'
                         },
                         {
-                            elem   : 'subtitle',
+                            elem   : 'description',
                             block  : 'section',
                             content: 'Frame of Mind Coaches specialize in coaching highly driven, achievement oriented individuals who are committed to living outstanding lives. The foundation of FOM Coaching is that a person’s thinking has a greater impact on their outcomes than any other contributing factor. As such, FOM Coaches focus on the study and examination of thoughts, beliefs, past experiences, and perspectives in order to make sense of the results that clients generate in their lives. Due to the impact of the coaches, the coaching process, the platform and the focus, clients consistently experience exceptional personal transformation and professional growth.'
                         },
@@ -670,8 +670,47 @@
                     ]
                 }
             ]
-        }
+        },
         /* SERVICES end */
+        /* BUTTON end */
+        , {
+            block  : 'section',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'section',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            block: 'button',
+                            mods : {
+                                size: 'l',
+                                icon: 'right'
+                            },
+                            mix  : [
+                                {
+                                    block: 'section',
+                                    elem : 'button'
+                                }
+                            ],
+                            text : 'Learn why Frame of Mind Coaching is right for you',
+                            icon : {
+                                block: 'icon',
+                                mods : {
+                                    type : 'arrow-right',
+                                    style: 'red'
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        /* BUTTON end */
         /* QUOTE start */
         , {
             block  : 'quote',
@@ -692,7 +731,7 @@
                                 {
                                     block: 'image',
                                     url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JF.jpg',
-                                    title: 'Все подробности на bem.info'
+                                    title: 'Quote author'
                                 }
                             ]
                         },
@@ -747,7 +786,7 @@
                             content: 'Our Team'
                         },
                         {
-                            elem   : 'subtitle',
+                            elem   : 'description',
                             block  : 'section',
                             content: 'Each and every member of the FOM Coaching team has started by going through our 1-1 coaching program as a client. The best way to describe them is through the core values which we commit to living and breathing on a daily basis.'
                         },
@@ -755,7 +794,97 @@
                             elem   : 'body',
                             block  : 'section',
                             content: [
-                                {}
+                                {
+                                    block  : 'row',
+                                    content: [
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    block: 'image',
+                                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/our_team.jpg',
+                                                    title: 'Our team'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    elem   : 'subtitle',
+                                                    block  : 'section',
+                                                    content: 'Frame of Mind Coaching\'s Core Values'
+                                                },
+                                                {
+                                                    elem   : 'content',
+                                                    block  : 'section',
+                                                    mix: [
+                                                        {
+                                                            block: 'text',
+                                                            elem: 'left'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            elem: 'italic'
+                                                        }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            content: [
+                                                                {
+                                                                    tag    : 'span',
+                                                                    content: 'GENEROSITY'
+                                                                },
+                                                                '- Giving whatever we can to our clients exactly when they need it the most.'
+                                                            ]
+                                                        }
+                                                        , {
+                                                            elem   : 'item',
+                                                            content: [
+                                                                {
+                                                                    tag    : 'span',
+                                                                    content: 'IMPACT THROUGH BOLD LEADERSHIP '
+                                                                },
+                                                                '- Leading by example AND coaching leaders to have a profound impact on every community they touch.'
+                                                            ]
+                                                        }
+                                                        , {
+                                                            elem   : 'item',
+                                                            content: [
+                                                                {
+                                                                    tag    : 'span',
+                                                                    content: 'INTIMACY'
+                                                                },
+                                                                '- Building an unprecedented level of trust with our clients.'
+                                                            ]
+                                                        }
+                                                        , {
+                                                            elem   : 'item',
+                                                            content: [
+                                                                {
+                                                                    tag    : 'span',
+                                                                    content: 'INNOVATION'
+                                                                },
+                                                                '- Developing and delivering the most leading edge and powerful approaches to coaching.'
+                                                            ]
+                                                        }
+                                                        , {
+                                                            elem   : 'item',
+                                                            content: [
+                                                                {
+                                                                    tag    : 'span',
+                                                                    content: 'PERSONAL DEVELOPMENT'
+                                                                },
+                                                                '- As FOM Coaches, we are committed to our own personal and professional development as we simultaneously take a stand for the personal development of our clients.'
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -763,6 +892,50 @@
             ]
         }
         /* TEAM end */
+        /* BUTTON end */
+        , {
+            block  : 'section',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'section',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'title',
+                            block  : 'section',
+                            content: 'Get a Taste of our Frame of Mind Coaching experience'
+                        },
+                        {
+                            block: 'button',
+                            mods : {
+                                size: 'l',
+                                icon: 'right'
+                            },
+                            mix  : [
+                                {
+                                    block: 'section',
+                                    elem : 'button'
+                                }
+                            ],
+                            text : 'Start your personalized Assessment',
+                            icon : {
+                                block: 'icon',
+                                mods : {
+                                    type : 'arrow-right',
+                                    style: 'red'
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        /* BUTTON end */
         /* FOOTER start */
         , {}
         /* FOOTER end */

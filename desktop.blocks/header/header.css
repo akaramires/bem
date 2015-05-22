@@ -42,6 +42,10 @@
     line-height: 1;
 }
 
+.header__logo .image {
+    width: 217px;
+}
+
 .header__menu {
     margin: 15px 0 0;
     vertical-align: top;

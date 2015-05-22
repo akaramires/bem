@@ -137,3 +137,8 @@
 .icon_size_s {
     font-size: 12px;
 }
+
+.icon_style_red {
+    color: white;
+    background: #bd0000;
+}

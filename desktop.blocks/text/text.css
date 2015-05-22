@@ -12,3 +12,7 @@
 .text__right {
     text-align: right;
 }
+
+.text__italic {
+    font-style: italic
+}

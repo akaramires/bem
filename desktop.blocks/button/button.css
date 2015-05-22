@@ -124,3 +124,31 @@
     color: #bd0000;
 }
 
+.button_size_l {
+    border-radius: 4px;
+}
+
+.button_size_l .button__text {
+    font-weight: 700;
+    padding: 2px 50px 0;
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.button_size_l .icon {
+    font-size: 56px;
+    line-height: 58px;
+    width: 56px;
+    height: 56px;
+}
+
+.button_icon_right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button_icon_left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
