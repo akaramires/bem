@@ -98,10 +98,10 @@
                             ]
                         }
                     ]
-                },
+                }
                 /* SUBSCRIBE FORM end */
                 /* NAVBAR start */
-                {
+                , {
                     elem   : 'navbar',
                     content: [
                         {
@@ -244,9 +244,10 @@
                 }
                 /* NAVBAR end */
             ]
-        },
+        }
         /* HEADER end */
-        {
+        /* BANNER start */
+        , {
             block  : 'banner',
             attrs  : {
                 style: 'background-image: url(http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/person1.jpg);'
@@ -359,5 +360,127 @@
                 }
             ]
         }
+        /* BANNER end */
+        /* QUOTE start */
+        , {
+            block  : 'quote',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'quote',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'photo',
+                            block  : 'quote',
+                            content: [
+                                {
+                                    block: 'image',
+                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JF.jpg',
+                                    title: 'Все подробности на bem.info'
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'text',
+                            block  : 'quote',
+                            content: [
+                                {
+                                    elem   : 'excerpt',
+                                    content: [
+                                        'I joined Frame of Mind Coaching because I knew I needed to do something different to get my real estate career on track. I was a top producing agent in California for years until I moved to Hawaii! I had only closed a couple of transactions each year, and I saw my savings rapidly depleting. I was de... ',
+                                        {
+                                            block  : 'link',
+                                            mix    : [
+                                                {
+                                                    block: 'quote',
+                                                    elem : 'more'
+                                                }
+                                            ],
+                                            url    : '#',
+                                            content: 'read more'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem   : 'author',
+                                    content: '- Joanne Foxxe'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        /* QUOTE end */
+        /* SERVICES start */
+        , {}
+        /* SERVICES end */
+        /* QUOTE start */
+        , {
+            block  : 'quote',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'quote',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'photo',
+                            block  : 'quote',
+                            content: [
+                                {
+                                    block: 'image',
+                                    url  : 'http://www.frameofmindcoaching.com/wp-content/uploads/2015/01/JF.jpg',
+                                    title: 'Все подробности на bem.info'
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'text',
+                            block  : 'quote',
+                            content: [
+                                {
+                                    elem   : 'excerpt',
+                                    content: [
+                                        'I joined Frame of Mind Coaching because I knew I needed to do something different to get my real estate career on track. I was a top producing agent in California for years until I moved to Hawaii! I had only closed a couple of transactions each year, and I saw my savings rapidly depleting. I was de... ',
+                                        {
+                                            block  : 'link',
+                                            mix    : [
+                                                {
+                                                    block: 'quote',
+                                                    elem : 'more'
+                                                }
+                                            ],
+                                            url    : '#',
+                                            content: 'read more'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem   : 'author',
+                                    content: '- Joanne Foxxe'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        /* QUOTE end */
+        /* TEAM start */
+        , {}
+        /* TEAM end */
+        /* FOOTER start */
+        , {}
+        /* FOOTER end */
     ]
 })
