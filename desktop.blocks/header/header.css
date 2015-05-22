@@ -2,16 +2,12 @@
 
 }
 
-.header_bg_red {
-    background: #bd0000;
-}
-
 .header__subscribe {
     height: 47px;
 }
 
-.header__navbar {
-
+.header__subscribe_bg_red {
+    background: #bd0000;
 }
 
 .header__container {
@@ -33,4 +29,21 @@
     margin: -1px 0 0 44px;
     width: 260px;
     vertical-align: top;
+}
+
+.header__navbar {
+    height: 62px;
+}
+
+.header__logo {
+    display: inline-block;
+    margin: 20px 0 0;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.header__menu {
+    margin: 15px 0 0;
+    vertical-align: top;
+    float: right;
 }
