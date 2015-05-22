@@ -282,18 +282,33 @@
                             elem   : 'actions',
                             content: [
                                 {
-                                    block: 'button',
-                                    text : 'Start your Assessment'
-                                },
-                                {
-                                    block: 'button',
-                                    icon : {
-                                        block: 'icon',
-                                        mods : {
-                                            type: 'play'
+                                    block  : 'row',
+                                    content: [
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    block: 'button',
+                                                    text : 'Start your Assessment'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-6',
+                                            content: [
+                                                {
+                                                    block: 'button',
+                                                    icon : {
+                                                        block: 'icon',
+                                                        mods : {
+                                                            type: 'play'
+                                                        }
+                                                    },
+                                                    text : 'Watch Video'
+                                                }
+                                            ]
                                         }
-                                    },
-                                    text : 'Watch Video'
+                                    ]
                                 }
                             ]
                         }
