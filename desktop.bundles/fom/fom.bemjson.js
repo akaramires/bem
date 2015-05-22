@@ -418,7 +418,37 @@
         }
         /* QUOTE end */
         /* SERVICES start */
-        , {}
+        , {
+            block  : 'section',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'section',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'title',
+                            block  : 'section',
+                            content: 'Why Frame of Mind Coaching?'
+                        },
+                        {
+                            elem   : 'subtitle',
+                            block  : 'section',
+                            content: 'Frame of Mind Coaches specialize in coaching highly driven, achievement oriented individuals who are committed to living outstanding lives. The foundation of FOM Coaching is that a person’s thinking has a greater impact on their outcomes than any other contributing factor. As such, FOM Coaches focus on the study and examination of thoughts, beliefs, past experiences, and perspectives in order to make sense of the results that clients generate in their lives. Due to the impact of the coaches, the coaching process, the platform and the focus, clients consistently experience exceptional personal transformation and professional growth.'
+                        },
+                        {
+                            elem   : 'body',
+                            block  : 'section',
+                            content: []
+                        }
+                    ]
+                }
+            ]
+        }
         /* SERVICES end */
         /* QUOTE start */
         , {
@@ -477,7 +507,37 @@
         }
         /* QUOTE end */
         /* TEAM start */
-        , {}
+        , {
+            block  : 'section',
+            content: [
+                {
+                    block  : 'container',
+                    mix    : [
+                        {
+                            block: 'section',
+                            elem : 'container'
+                        }
+                    ],
+                    content: [
+                        {
+                            elem   : 'title',
+                            block  : 'section',
+                            content: 'Our Team'
+                        },
+                        {
+                            elem   : 'subtitle',
+                            block  : 'section',
+                            content: 'Each and every member of the FOM Coaching team has started by going through our 1-1 coaching program as a client. The best way to describe them is through the core values which we commit to living and breathing on a daily basis.'
+                        },
+                        {
+                            elem   : 'body',
+                            block  : 'section',
+                            content: []
+                        }
+                    ]
+                }
+            ]
+        }
         /* TEAM end */
         /* FOOTER start */
         , {}
