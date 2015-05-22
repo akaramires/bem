@@ -67,9 +67,17 @@
                                         {
                                             block  : 'control-group',
                                             mods   : {
-                                                icon: 'envelope'
+                                                with: 'icon'
                                             },
                                             content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type : 'envelope',
+                                                        color: 'white',
+                                                        size : 's'
+                                                    }
+                                                },
                                                 {
                                                     block      : 'input',
                                                     mods       : {

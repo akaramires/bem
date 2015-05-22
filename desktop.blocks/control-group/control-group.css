@@ -9,12 +9,22 @@
     display: table-cell;
 }
 
+.control-group .button {
+    margin-left: -1px;
+}
+
 .control-group .input:last-of-type,
 .control-group .button:last-of-type {
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
 }
 
-.control-group_icon_envelope {
+.control-group_with_icon .icon.icon_size_s {
+    position: absolute;
+    top: 19px;
+    left: 5px;
+}
 
+.control-group_with_icon .input__control {
+    padding-left: 25px;
 }

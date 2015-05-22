@@ -20,9 +20,9 @@
 }
 
 .input_size_s .input__control {
-    padding: 5px 4px 4px;
+    padding: 5px 4px 4px 25px;
     font-size: 12px;
-    width: 182px;
+    width: 161px;
 }
 
 .input_type_transparent .input__control {
