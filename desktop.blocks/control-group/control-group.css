@@ -2,6 +2,7 @@
     position: relative;
     display: table;
     border-collapse: separate;
+    vertical-align: middle;
 }
 
 .control-group .input,
@@ -10,13 +11,12 @@
 }
 
 .control-group .button {
-    margin-left: -1px;
+    margin-left: -2px;
 }
 
 .control-group .input:last-of-type,
 .control-group .button:last-of-type {
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
+    border-radius: 0 6px 6px 0;
 }
 
 .control-group_with_icon .icon.icon_size_s {

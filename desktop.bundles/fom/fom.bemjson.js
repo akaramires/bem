@@ -9,10 +9,6 @@
     head   : [
         {
             elem: 'css',
-            url : 'fonts.css'
-        },
-        {
-            elem: 'css',
             url : '_fom.css'
         }
     ],
@@ -91,9 +87,7 @@
                                                 {
                                                     block: 'button',
                                                     mods : {
-                                                        size : 's',
-                                                        bg   : 'white',
-                                                        color: 'red'
+                                                        size: 's'
                                                     },
                                                     text : 'Sign Up'
                                                 }
@@ -268,45 +262,94 @@
                     ],
                     content: [
                         {
-                            block  : 'banner',
-                            elem   : 'title',
-                            content: 'Your Thinking Will Determine What You Can Achieve...'
-                        },
-                        {
-                            block  : 'banner',
-                            elem   : 'subtitle',
-                            content: 'Frame of Mind Coaching will transform your thinking and lead you to extraordinary results.'
-                        },
-                        {
-                            block  : 'banner',
-                            elem   : 'actions',
+                            block  : 'row',
                             content: [
                                 {
-                                    block  : 'row',
+                                    elem   : 'col-7',
                                     content: [
                                         {
-                                            elem   : 'col-6',
-                                            content: [
-                                                {
-                                                    block: 'button',
-                                                    text : 'Start your Assessment'
-                                                }
-                                            ]
+                                            block  : 'banner',
+                                            elem   : 'title',
+                                            content: 'Your Thinking Will Determine What You Can Achieve...'
                                         },
                                         {
-                                            elem   : 'col-6',
+                                            block  : 'banner',
+                                            elem   : 'subtitle',
+                                            content: 'Frame of Mind Coaching will transform your thinking and lead you to extraordinary results.'
+                                        },
+                                        {
+                                            block  : 'banner',
+                                            elem   : 'actions',
                                             content: [
                                                 {
-                                                    block: 'button',
-                                                    icon : {
-                                                        block: 'icon',
-                                                        mods : {
-                                                            type: 'play'
+                                                    block  : 'row',
+                                                    content: [
+                                                        {
+                                                            elem   : 'col-5',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'text',
+                                                                    elem : 'right'
+                                                                }
+                                                            ],
+                                                            content: [
+                                                                {
+                                                                    block: 'button',
+                                                                    mods : {
+                                                                        color: 'red'
+                                                                    },
+                                                                    text : 'Start your Assessment'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'col-5',
+                                                            content: [
+                                                                {
+                                                                    block: 'button',
+                                                                    mods : {
+                                                                        color: 'transparent'
+                                                                    },
+                                                                    icon : {
+                                                                        block: 'icon',
+                                                                        mods : {
+                                                                            type: 'play'
+                                                                        }
+                                                                    },
+                                                                    text : 'Watch Video'
+                                                                }
+                                                            ]
                                                         }
-                                                    },
-                                                    text : 'Watch Video'
+                                                    ]
                                                 }
                                             ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block  : 'row',
+                            content: [
+                                {
+                                    elem   : 'scroll2content',
+                                    block  : 'banner',
+                                    mix    : [
+                                        {
+                                            block: 'text',
+                                            elem : 'center'
+                                        }
+                                    ],
+                                    content: [
+                                        {
+                                            content: 'Learn More'
+                                        },
+                                        {
+                                            block: 'icon',
+                                            mods : {
+                                                type : 'arrow-down-thin',
+                                                color: 'white'
+                                            }
                                         }
                                     ]
                                 }

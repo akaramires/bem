@@ -1,41 +1,126 @@
 .button {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: inline-block;
+    border: 1px solid #bd0000;
+    white-space: nowrap;
+    background: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-background-clip: padding;
+    border-radius: 6px;
+    background-clip: padding-box;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 10px 0 0;
 }
 
 .button__control {
-    border: none;
-    white-space: nowrap;
 }
 
 .button__text {
-
+    font-size: 16px;
+    color: #bd0000;
+    display: inline-block;
+    float: left;
+    padding: 9px 20px;
+    line-height: 22.8571434020996px;
+    font-family: 'Museo Sans W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
 }
 
-.button_size_s {
-    font-size: 12px;
-    padding: 6px 12px 5px;
-}
-
-.button__control:active {
+.button:active {
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
-.button__control.active,
-.button__control:active,
-.button__control:focus {
+.button.active,
+.button:active,
+.button:focus {
     outline: 0;
-}
-
-.button_color_red {
-    color: #fd1a1d;
-}
-
-.button_color_red:active {
+    text-decoration: none;
     color: #bd0000;
 }
 
+.button .icon {
+    font-size: 20px;
+    line-height: 39px;
+}
+
+/* Red btn start */
+.button_color_red {
+    background: #bd0000;
+    border-color: #890001;
+}
+
+.button_color_red .button__text {
+    color: #fff;
+}
+
+.button_color_red:active {
+    background: #ae0000;
+    color: #fff;
+}
+
+.button_color_red:active .button__text {
+    background: #ae0000;
+    color: #fff;
+}
+
+/* Red btn end */
+
+/* Transparent btn start */
+.button_color_transparent {
+    background: transparent;
+    border-color: white;
+    padding-right: 21px;
+}
+
+.button_color_transparent .button__text {
+    color: #fff;
+    padding-right: 9px;
+}
+
+.button_color_transparent:active {
+    background: #ae0000;
+    color: #fff;
+}
+
+.button_color_transparent:active .button__text {
+    background: #ae0000;
+    color: #fff;
+}
+
+.button_color_transparent .icon {
+    color: #ffffff;
+}
+
+/* Transparent btn end */
+
+/* White btn start */
 .button_bg_white {
     background: #f7f7f7;
+}
+
+/* White btn end */
+
+.button_size_s {
+    line-height: 1;
+}
+
+.button_size_s .button__text {
+    font-size: 12px;
+    padding: 6px 12px 7px;
+    font-weight: 300;
+    color: #fd1a1d;
+    line-height: 1;
+}
+
+.button_size_s.active .button__text,
+.button_size_s:active .button__text,
+.button_size_s:focus .button__text {
+    color: #bd0000;
 }
 

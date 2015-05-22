@@ -9,6 +9,11 @@
     display: block;
 }
 
+.row:before {
+    content: " ";
+    display: table;
+}
+
 [class^="row__col-"], [class*=" row__col_"] {
     position: relative;
     min-height: 1px;
