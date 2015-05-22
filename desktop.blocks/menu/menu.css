@@ -35,3 +35,28 @@
     border-radius: 6px;
     margin-left: 17px;
 }
+
+.menu_type_vertical {
+    display: inline-block;
+    float: left;
+}
+
+.menu_type_vertical .menu-item {
+    display: block;
+    padding: 4px 0 3px;
+    float: none;
+}
+
+.menu_type_vertical .menu-item .link {
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    text-decoration: none !important;
+    font-size: 13pt;
+    color: #424242;
+}
+
+.menu_type_vertical .menu-item .link:hover {
+    color: #171717;
+}
+

@@ -37,13 +37,8 @@
                     ],
                     content: [
                         {
-                            block  : 'container',
-                            mix    : [
-                                {
-                                    block: 'header',
-                                    elem : 'container'
-                                }
-                            ],
+                            elem   : 'container',
+                            mix    : [ {block: 'container'} ],
                             content: [
                                 {
                                     elem   : 'content',
@@ -254,13 +249,8 @@
             },
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'banner',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             block  : 'row',
@@ -366,13 +356,8 @@
             block  : 'quote',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'quote',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'photo',
@@ -422,13 +407,8 @@
             block  : 'section',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'section',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'title',
@@ -677,13 +657,8 @@
             block  : 'section',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'section',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             block: 'button',
@@ -716,13 +691,8 @@
             block  : 'quote',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'quote',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'photo',
@@ -772,13 +742,8 @@
             block  : 'section',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'section',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'title',
@@ -818,14 +783,14 @@
                                                 {
                                                     elem   : 'content',
                                                     block  : 'section',
-                                                    mix: [
+                                                    mix    : [
                                                         {
                                                             block: 'text',
-                                                            elem: 'left'
+                                                            elem : 'left'
                                                         },
                                                         {
                                                             block: 'text',
-                                                            elem: 'italic'
+                                                            elem : 'italic'
                                                         }
                                                     ],
                                                     content: [
@@ -897,13 +862,8 @@
             block  : 'section',
             content: [
                 {
-                    block  : 'container',
-                    mix    : [
-                        {
-                            block: 'section',
-                            elem : 'container'
-                        }
-                    ],
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'title',
@@ -937,7 +897,257 @@
         }
         /* BUTTON end */
         /* FOOTER start */
-        , {}
+        , {
+            block  : 'footer',
+            content: [
+                {
+                    elem   : 'container',
+                    mix    : [ {block: 'container'} ],
+                    content: [
+                        {
+                            elem   : 'navbar',
+                            content: [
+                                {
+                                    block  : 'row',
+                                    content: [
+                                        {
+                                            elem   : 'col-2',
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    block  : 'footer',
+                                                    content: 'Services'
+                                                },
+                                                {
+                                                    block  : 'menu',
+                                                    mods   : {
+                                                        type: 'vertical'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Coaching'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Certification'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-2',
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    block  : 'footer',
+                                                    content: 'About Us'
+                                                },
+                                                {
+                                                    block  : 'menu',
+                                                    mods   : {
+                                                        type: 'vertical'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Meet Our Team'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Testimonials'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Privacy'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-2',
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    block  : 'footer',
+                                                    content: 'News'
+                                                },
+                                                {
+                                                    block  : 'menu',
+                                                    mods   : {
+                                                        type: 'vertical'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'Media'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'News & Views'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-2',
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    block  : 'footer',
+                                                    content: 'Connect'
+                                                },
+                                                {
+                                                    block  : 'menu',
+                                                    mods   : {
+                                                        type: 'vertical'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: '416-747-6900'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block  : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    block  : 'link',
+                                                                    content: 'contact'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'col-4',
+                                            content: [
+                                                {
+                                                    elem   : 'title',
+                                                    block  : 'footer',
+                                                    content: 'Sign up for our newsletter'
+                                                },
+                                                {
+                                                    block: 'form'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            elem   : 'social',
+                            mix    : [
+                                {
+                                    block: 'text',
+                                    elem : 'center'
+                                }
+                            ],
+                            content: [
+                                {
+                                    block  : 'social-list',
+                                    content: [
+                                        {
+                                            block  : 'link',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type: 'tw'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block  : 'link',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type: 'fb'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block  : 'link',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type: 'in'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block  : 'link',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type: 'you-tube'
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem   : 'copy',
+                                    content: '© Frame of Mind Coaching 2015'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
         /* FOOTER end */
     ]
 })
