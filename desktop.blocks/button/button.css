@@ -15,12 +15,10 @@
     padding: 6px 12px 5px;
 }
 
-.button_color_red {
-    color: #fd1a1d;
-}
-
-.button_bg_white {
-    background: #f7f7f7;
+.button__control:active {
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
 .button__control.active,
@@ -29,9 +27,15 @@
     outline: 0;
 }
 
-.button__control:active {
-    color: #bd0000;
-    background-image: none;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+.button_color_red {
+    color: #fd1a1d;
 }
+
+.button_color_red:active {
+    color: #bd0000;
+}
+
+.button_bg_white {
+    background: #f7f7f7;
+}
+

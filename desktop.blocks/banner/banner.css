@@ -1,0 +1,36 @@
+.banner {
+    height: 580px;
+    background-position: 50% 70%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.banner__container {
+
+}
+
+.banner__title {
+    font-family: 'Kettering 105 W00', sans-serif;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 125%;
+    margin: 0 0 35px;
+    padding-top: 125px;
+    width: 50%;
+    text-align: left;
+}
+
+.banner__subtitle {
+    color: #fff;
+    font-size: 26px;
+    line-height: 125%;
+    padding-right: 55px;
+    margin: 20px 0 40px;
+    width: 50%;
+    text-align: left;
+}
+
+.banner__actions {
+
+}
