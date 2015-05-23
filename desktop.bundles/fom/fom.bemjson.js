@@ -288,7 +288,8 @@
                                                                 {
                                                                     block: 'button',
                                                                     mods : {
-                                                                        color: 'red'
+                                                                        color: 'red',
+                                                                        size : 'l'
                                                                     },
                                                                     text : 'Start your Assessment'
                                                                 }
@@ -664,7 +665,7 @@
                         {
                             block: 'button',
                             mods : {
-                                size: 'l',
+                                size: 'xl',
                                 icon: 'right'
                             },
                             mix  : [
@@ -874,7 +875,7 @@
                         {
                             block: 'button',
                             mods : {
-                                size: 'l',
+                                size: 'xl',
                                 icon: 'right'
                             },
                             mix  : [
@@ -1092,9 +1093,6 @@
                                                                 },
                                                                 {
                                                                     block      : 'input',
-                                                                    mods       : {
-                                                                        type: 'transparent'
-                                                                    },
                                                                     placeholder: 'Enter your email Address'
                                                                 }
                                                             ]
