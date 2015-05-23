@@ -1,39 +1,21 @@
 .input {
-    outline: none;
-    line-height: 1;
-}
-
-.input_size_s {
-    font-size: 12px;
-    height: 25px;
-}
-
-.input__box {
-
 }
 
 .input__control {
-    position: relative;
-    width: 100%;
-    margin-bottom: 0;
-    border: 1px solid white;
-}
-
-.input_size_s .input__control {
-    padding: 5px 4px 4px 25px;
-    font-size: 12px;
-    width: 192px;
-}
-
-.input_type_transparent .input__control {
-    color: #fff;
-    background-color: transparent;
-}
-
-.input__control:active {
     outline: none;
-}
-
-.input__control:focus {
-    outline: none;
+    line-height: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -moz-background-clip: padding;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    background: 0 0;
+    width: 250px;
+    border: 1px solid #515151;
+    padding: 0 20px;
+    font-size: 12pt;
+    color: #424242;
+    font-style: italic;
+    float: left;
+    height: 38px;
 }

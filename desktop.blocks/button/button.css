@@ -13,7 +13,7 @@
     cursor: pointer;
     vertical-align: middle;
     padding: 0;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 10px;
 }
 
 .button__control {
@@ -24,7 +24,7 @@
     color: #bd0000;
     display: inline-block;
     float: left;
-    padding: 9px 20px;
+    padding: 7px 16px;
     line-height: 22.8571434020996px;
     font-family: 'Museo Sans W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;

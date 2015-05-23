@@ -1072,7 +1072,40 @@
                                                     content: 'Sign up for our newsletter'
                                                 },
                                                 {
-                                                    block: 'form'
+                                                    block  : 'form',
+                                                    mods   : {
+                                                        type: 'horizontal'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block  : 'control-group',
+                                                            mods   : {
+                                                                with: 'icon'
+                                                            },
+                                                            content: [
+                                                                {
+                                                                    block: 'icon',
+                                                                    mods : {
+                                                                        type: 'envelope'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    block      : 'input',
+                                                                    mods       : {
+                                                                        type: 'transparent'
+                                                                    },
+                                                                    placeholder: 'Enter your email Address'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block: 'button',
+                                                            mods : {
+                                                                color: 'red'
+                                                            },
+                                                            text : 'Sign Up'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }

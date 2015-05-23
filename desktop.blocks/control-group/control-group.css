@@ -14,17 +14,31 @@
     margin-left: -2px;
 }
 
-.control-group .input:last-of-type,
-.control-group .button:last-of-type {
+.control-group [class*=" __control"]:last-of-type {
     border-radius: 0 6px 6px 0;
 }
 
-.control-group_with_icon .icon.icon_size_s {
+.control-group_with_icon {
+
+}
+
+.control-group_with_icon .icon {
     position: absolute;
-    top: 19px;
-    left: 5px;
+    top: 11px;
+    left: 8px;
+    font-size: 16px;
 }
 
 .control-group_with_icon .input__control {
-    padding-left: 25px;
+    padding-left: 37px;
 }
+
+/*.control-group_with_icon .icon.icon_size_s {*/
+/*position: absolute;*/
+/*top: 19px;*/
+/*left: 5px;*/
+/*}*/
+
+/*.control-group_with_icon .input__control {*/
+/*padding-left: 25px;*/
+/*}*/
