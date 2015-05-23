@@ -19,3 +19,21 @@
     float: left;
     height: 38px;
 }
+
+.input_size_s .input__control {
+    padding: 5px 0 4px;
+    line-height: 1;
+    font-size: 12px;
+    height: 25px;
+    width: 192px;
+    margin-top: 2px;
+}
+
+.input_type_transparent .input__control {
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+
+.input_border_strict .input__control {
+    border-radius: 0;
+}

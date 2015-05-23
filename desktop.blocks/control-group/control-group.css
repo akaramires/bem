@@ -8,13 +8,14 @@
 .control-group .input,
 .control-group .button {
     display: table-cell;
+    vertical-align: middle;
 }
 
 .control-group .button {
     margin-left: -2px;
 }
 
-.control-group [class*=" __control"]:last-of-type {
+.control-group [class*="button__control"] {
     border-radius: 0 6px 6px 0;
 }
 
@@ -29,16 +30,17 @@
     font-size: 16px;
 }
 
+.control-group_with_icon .icon.icon_size_s {
+    top: 19px;
+    left: 5px;
+    font-size: 12px;
+}
+
 .control-group_with_icon .input__control {
     padding-left: 37px;
 }
 
-/*.control-group_with_icon .icon.icon_size_s {*/
-/*position: absolute;*/
-/*top: 19px;*/
-/*left: 5px;*/
-/*}*/
+.control-group_with_icon .input_size_s .input__control {
+    padding-left: 26px;
+}
 
-/*.control-group_with_icon .input__control {*/
-/*padding-left: 25px;*/
-/*}*/

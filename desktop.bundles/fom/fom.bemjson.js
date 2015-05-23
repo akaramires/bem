@@ -74,8 +74,9 @@
                                                 {
                                                     block      : 'input',
                                                     mods       : {
-                                                        size: 's',
-                                                        type: 'transparent'
+                                                        size  : 's',
+                                                        type  : 'transparent',
+                                                        border: 'strict'
                                                     },
                                                     placeholder: 'Enter your email Address'
                                                 },

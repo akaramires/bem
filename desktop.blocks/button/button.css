@@ -108,6 +108,7 @@
 
 .button_size_s {
     line-height: 1;
+    border: none;
 }
 
 .button_size_s .button__text {
@@ -151,4 +152,8 @@
 .button_icon_left {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.button_border_strict {
+    border-radius: 0;
 }
