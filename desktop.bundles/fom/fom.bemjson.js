@@ -240,7 +240,7 @@
                 }
                 /* NAVBAR end */
             ]
-        }
+        },
         /* HEADER end */
         /* BANNER start */
         , {
