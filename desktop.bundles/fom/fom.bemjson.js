@@ -33,19 +33,19 @@
                 /* SUBSCRIBE FORM start */
                 {
                     elem   : 'subscribe',
-                    mods   : {
-                        bg: 'red'
-                    },
                     mix    : [
                         {
                             block: 'text',
                             elem : 'center'
                         }
                     ],
+                    mods   : {
+                        bg: 'red'
+                    },
                     content: [
                         {
                             elem   : 'container',
-                            mix    : [ {block: 'container'} ],
+                            cls    : 'container',
                             content: [
                                 {
                                     elem   : 'content',
@@ -57,12 +57,7 @@
                                 },
                                 {
                                     block  : 'form',
-                                    mix    : [
-                                        {
-                                            block: 'header',
-                                            elem : 'form'
-                                        }
-                                    ],
+                                    cls    : 'header__form',
                                     content: [
                                         {
                                             block  : 'control-group',
@@ -109,12 +104,7 @@
                     content: [
                         {
                             block  : 'container',
-                            mix    : [
-                                {
-                                    block: 'header',
-                                    elem : 'container'
-                                }
-                            ],
+                            cls    : 'header__container',
                             content: [
                                 {
                                     elem   : 'logo',
@@ -136,12 +126,7 @@
                                 },
                                 {
                                     block  : 'menu',
-                                    mix    : [
-                                        {
-                                            block: 'header',
-                                            elem : 'menu'
-                                        }
-                                    ],
+                                    cls    : 'header__menu',
                                     mods   : {
                                         type: 'inline'
                                     },
@@ -258,23 +243,14 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             block  : 'row',
                             content: [
                                 {
                                     elem   : 'col-lg-7',
-                                    mix    : [
-                                        {
-                                            block: 'row',
-                                            elem : 'col-sm-12'
-                                        },
-                                        {
-                                            block: 'row',
-                                            elem : 'col-xs-12'
-                                        }
-                                    ],
+                                    cls    : 'row__col-sm-12 row__col-xs-12',
                                     content: [
                                         {
                                             block  : 'banner',
@@ -295,20 +271,7 @@
                                                     content: [
                                                         {
                                                             elem   : 'col-lg-5',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-md-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-6'
-                                                                },
-                                                                {
-                                                                    block: 'text',
-                                                                    elem : 'right'
-                                                                }
-                                                            ],
+                                                            cls    : 'row__col-md-6 row__col-xs-6 text__right',
                                                             content: [
                                                                 {
                                                                     block: 'button',
@@ -322,16 +285,7 @@
                                                         },
                                                         {
                                                             elem   : 'col-lg-5',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-md-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-6'
-                                                                },
-                                                            ],
+                                                            cls    : 'row__col-md-6 row__col-xs-6',
                                                             content: [
                                                                 {
                                                                     block: 'button',
@@ -395,7 +349,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             elem   : 'photo',
@@ -418,12 +372,7 @@
                                         'I joined Frame of Mind Coaching because I knew I needed to do something different to get my real estate career on track. I was a top producing agent in California for years until I moved to Hawaii! I had only closed a couple of transactions each year, and I saw my savings rapidly depleting. I was de... ',
                                         {
                                             block  : 'link',
-                                            mix    : [
-                                                {
-                                                    block: 'quote',
-                                                    elem : 'more'
-                                                }
-                                            ],
+                                            cls    : 'quote__more',
                                             url    : '#',
                                             content: 'read more'
                                         }
@@ -467,32 +416,14 @@
                                     content: [
                                         {
                                             elem   : 'col-lg-6',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-6'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-xs-12'
-                                                }
-                                            ],
+                                            cls    : 'row__col-sm6 row__col-xs-12',
                                             content: [
                                                 {
                                                     block  : 'row',
                                                     content: [
                                                         {
                                                             elem   : 'col-lg-6',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-sm-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-12'
-                                                                }
-                                                            ],
+                                                            cls    : 'row__col-sm-6 row__col-xs-12',
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -550,16 +481,7 @@
                                                         },
                                                         {
                                                             elem   : 'col-lg-6',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-sm-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-12'
-                                                                }
-                                                            ],
+                                                            cls    : 'row__col-sm-6 row__col-xs-12',
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -616,32 +538,14 @@
                                         },
                                         {
                                             elem   : 'col-lg-6',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-6'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-xs-12'
-                                                }
-                                            ],
+                                            cls    : 'row__col-sm-6 row__col-xs-12',
                                             content: [
                                                 {
                                                     block  : 'row',
                                                     content: [
                                                         {
                                                             elem   : 'col-lg-6',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-sm-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-12'
-                                                                }
-                                                            ],
+                                                            cls    : 'row__col-sm-6 row__col-xs-12',
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -684,16 +588,7 @@
                                                         },
                                                         {
                                                             elem   : 'col-lg-6',
-                                                            mix    : [
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-sm-6'
-                                                                },
-                                                                {
-                                                                    block: 'row',
-                                                                    elem : 'col-xs-12'
-                                                                }
-                                                            ],
+                                                            cls    : 'row__col-sm-6 row__col-xs-12',
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -750,13 +645,13 @@
             ]
         },
         /* SERVICES end */
-        /* BUTTON end */
+        /* BUTTON start */
         , {
             block  : 'section',
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             block: 'button',
@@ -764,12 +659,7 @@
                                 size: 'xl',
                                 icon: 'right'
                             },
-                            mix  : [
-                                {
-                                    block: 'section',
-                                    elem : 'button'
-                                }
-                            ],
+                            cls  : 'section__button',
                             text : 'Learn why Frame of Mind Coaching is right for you',
                             icon : {
                                 block: 'icon',
@@ -790,7 +680,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             elem   : 'photo',
@@ -813,12 +703,7 @@
                                         'I joined Frame of Mind Coaching because I knew I needed to do something different to get my real estate career on track. I was a top producing agent in California for years until I moved to Hawaii! I had only closed a couple of transactions each year, and I saw my savings rapidly depleting. I was de... ',
                                         {
                                             block  : 'link',
-                                            mix    : [
-                                                {
-                                                    block: 'quote',
-                                                    elem : 'more'
-                                                }
-                                            ],
+                                            cls    : 'quote__more',
                                             url    : '#',
                                             content: 'read more'
                                         }
@@ -841,7 +726,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             elem   : 'title',
@@ -862,16 +747,7 @@
                                     content: [
                                         {
                                             elem   : 'col-lg-6',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-6'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-12'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-6 row__col-sm-12',
                                             content: [
                                                 {
                                                     block: 'image',
@@ -882,16 +758,7 @@
                                         },
                                         {
                                             elem   : 'col-lg-6',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-6'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-12'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-6 row__col-sm-12',
                                             content: [
                                                 {
                                                     elem   : 'subtitle',
@@ -901,16 +768,7 @@
                                                 {
                                                     elem   : 'content',
                                                     block  : 'section',
-                                                    mix    : [
-                                                        {
-                                                            block: 'text',
-                                                            elem : 'left'
-                                                        },
-                                                        {
-                                                            block: 'text',
-                                                            elem : 'italic'
-                                                        }
-                                                    ],
+                                                    cls    : 'text__left text_italic',
                                                     content: [
                                                         {
                                                             elem   : 'item',
@@ -981,7 +839,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             elem   : 'title',
@@ -994,12 +852,7 @@
                                 size: 'xl',
                                 icon: 'right'
                             },
-                            mix  : [
-                                {
-                                    block: 'section',
-                                    elem : 'button'
-                                }
-                            ],
+                            cls  : 'section__button',
                             text : 'Start your personalized Assessment',
                             icon : {
                                 block: 'icon',
@@ -1020,7 +873,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    cls    : 'container',
                     content: [
                         {
                             elem   : 'navbar',
@@ -1030,16 +883,7 @@
                                     content: [
                                         {
                                             elem   : 'col-lg-2',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-3'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-3 row__col-sm-3',
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1076,16 +920,7 @@
                                         },
                                         {
                                             elem   : 'col-lg-2',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-3'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-3 row__col-sm-3',
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1131,16 +966,7 @@
                                         },
                                         {
                                             elem   : 'col-lg-2',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-3'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-3 row__col-sm-3',
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1177,16 +1003,7 @@
                                         },
                                         {
                                             elem   : 'col-lg-2',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-3'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-3 row__col-sm-3',
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1223,28 +1040,7 @@
                                         },
                                         {
                                             elem   : 'col-lg-4',
-                                            mix    : [
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-6'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-lg-offset-0'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-md-offset-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-offset-3'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    elem : 'col-sm-9'
-                                                }
-                                            ],
+                                            cls    : 'row__col-md-6 col-lg-offset-0 col-md-offset-3 col-sm-offset-3 col-sm-9',
                                             content: [
                                                 {
                                                     elem   : 'title',
