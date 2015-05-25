@@ -88,13 +88,15 @@
     color: #fff;
 }
 
-.button_color_transparent:active .button__text {
-    background: #ae0000;
-    color: #fff;
-}
-
 .button_color_transparent .icon {
     color: #ffffff;
+}
+
+.button_color_transparent:active,
+.button_color_transparent:focus {
+    background: none;
+    border-color: #ededed;
+    color: #ededed;
 }
 
 /* Transparent btn end */
