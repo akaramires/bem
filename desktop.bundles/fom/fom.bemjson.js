@@ -45,7 +45,7 @@
                     content: [
                         {
                             elem   : 'container',
-                            mix    : [{block: 'container'}],
+                            mix    : [ {block: 'container'} ],
                             content: [
                                 {
                                     elem   : 'content',
@@ -258,7 +258,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             block  : 'row',
@@ -374,6 +374,7 @@
                                         },
                                         {
                                             block: 'icon',
+                                            js   : true,
                                             mods : {
                                                 type : 'arrow-down-thin',
                                                 color: 'white'
@@ -394,7 +395,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'photo',
@@ -445,7 +446,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    cls    : 'container section-1',
                     content: [
                         {
                             elem   : 'title',
@@ -755,7 +756,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             block: 'button',
@@ -789,7 +790,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'photo',
@@ -840,7 +841,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'title',
@@ -980,7 +981,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'title',
@@ -1019,7 +1020,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [{block: 'container'}],
+                    mix    : [ {block: 'container'} ],
                     content: [
                         {
                             elem   : 'navbar',
