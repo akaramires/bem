@@ -31,7 +31,7 @@
 }
 
 .section__subtitle {
-    font-family: 'Kettering 105 W00',sans-serif;
+    font-family: 'Kettering 105 W00', sans-serif;
     color: #bd0000;
     font-size: 24px;
     margin: 20px 0 5px;
@@ -50,4 +50,30 @@
 .section__item span {
     text-transform: uppercase;
     color: #c00000;
+}
+
+@media only screen and (max-width: 992px) {
+    .section__description {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section__button .button__text {
+        padding: 2px 2px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section__button {
+        border-radius: 4px;
+    }
+
+    .section__button .icon {
+        display: none;
+    }
+
+    .section__button .button__text {
+        font-size: 10px;
+    }
 }

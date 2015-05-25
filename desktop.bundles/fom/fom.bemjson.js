@@ -10,6 +10,13 @@
         {
             elem: 'css',
             url : '_fom.css'
+        },
+        {
+            elem : 'meta',
+            attrs: {
+                name   : 'viewport',
+                content: 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.1, target-densityDpi=device-dpi'
+            }
         }
     ],
     scripts: [
@@ -38,7 +45,7 @@
                     content: [
                         {
                             elem   : 'container',
-                            mix    : [ {block: 'container'} ],
+                            mix    : [{block: 'container'}],
                             content: [
                                 {
                                     elem   : 'content',
@@ -251,13 +258,23 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             block  : 'row',
                             content: [
                                 {
-                                    elem   : 'col-7',
+                                    elem   : 'col-lg-7',
+                                    mix    : [
+                                        {
+                                            block: 'row',
+                                            elem : 'col-sm-12'
+                                        },
+                                        {
+                                            block: 'row',
+                                            elem : 'col-xs-12'
+                                        }
+                                    ],
                                     content: [
                                         {
                                             block  : 'banner',
@@ -277,8 +294,16 @@
                                                     block  : 'row',
                                                     content: [
                                                         {
-                                                            elem   : 'col-5',
+                                                            elem   : 'col-lg-5',
                                                             mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-md-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-6'
+                                                                },
                                                                 {
                                                                     block: 'text',
                                                                     elem : 'right'
@@ -296,7 +321,17 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem   : 'col-5',
+                                                            elem   : 'col-lg-5',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-md-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-6'
+                                                                },
+                                                            ],
                                                             content: [
                                                                 {
                                                                     block: 'button',
@@ -359,7 +394,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'photo',
@@ -410,7 +445,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'title',
@@ -430,13 +465,33 @@
                                     block  : 'row',
                                     content: [
                                         {
-                                            elem   : 'col-6',
+                                            elem   : 'col-lg-6',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-6'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-xs-12'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     block  : 'row',
                                                     content: [
                                                         {
-                                                            elem   : 'col-6',
+                                                            elem   : 'col-lg-6',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-sm-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-12'
+                                                                }
+                                                            ],
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -493,7 +548,17 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem   : 'col-6',
+                                                            elem   : 'col-lg-6',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-sm-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-12'
+                                                                }
+                                                            ],
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -549,13 +614,33 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-6',
+                                            elem   : 'col-lg-6',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-6'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-xs-12'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     block  : 'row',
                                                     content: [
                                                         {
-                                                            elem   : 'col-6',
+                                                            elem   : 'col-lg-6',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-sm-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-12'
+                                                                }
+                                                            ],
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -597,7 +682,17 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem   : 'col-6',
+                                                            elem   : 'col-lg-6',
+                                                            mix    : [
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-sm-6'
+                                                                },
+                                                                {
+                                                                    block: 'row',
+                                                                    elem : 'col-xs-12'
+                                                                }
+                                                            ],
                                                             content: [
                                                                 {
                                                                     block  : 'box',
@@ -660,7 +755,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             block: 'button',
@@ -694,7 +789,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'photo',
@@ -745,7 +840,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'title',
@@ -765,7 +860,17 @@
                                     block  : 'row',
                                     content: [
                                         {
-                                            elem   : 'col-6',
+                                            elem   : 'col-lg-6',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-6'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-12'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     block: 'image',
@@ -775,7 +880,17 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-6',
+                                            elem   : 'col-lg-6',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-6'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-12'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'subtitle',
@@ -865,7 +980,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'title',
@@ -904,7 +1019,7 @@
             content: [
                 {
                     elem   : 'container',
-                    mix    : [ {block: 'container'} ],
+                    mix    : [{block: 'container'}],
                     content: [
                         {
                             elem   : 'navbar',
@@ -913,7 +1028,17 @@
                                     block  : 'row',
                                     content: [
                                         {
-                                            elem   : 'col-2',
+                                            elem   : 'col-lg-2',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-3'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -949,7 +1074,17 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-2',
+                                            elem   : 'col-lg-2',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-3'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -994,7 +1129,17 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-2',
+                                            elem   : 'col-lg-2',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-3'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1030,7 +1175,17 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-2',
+                                            elem   : 'col-lg-2',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-3'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1066,7 +1221,29 @@
                                             ]
                                         },
                                         {
-                                            elem   : 'col-4',
+                                            elem   : 'col-lg-4',
+                                            mix    : [
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-6'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-lg-offset-0'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-md-offset-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-offset-3'
+                                                },
+                                                {
+                                                    block: 'row',
+                                                    elem : 'col-sm-9'
+                                                }
+                                            ],
                                             content: [
                                                 {
                                                     elem   : 'title',
@@ -1165,6 +1342,71 @@
                                                     mods : {
                                                         type: 'you-tube'
                                                     }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem   : 'mobile',
+                                    content: [
+                                        {
+                                            block  : 'form',
+                                            mods   : {
+                                                type: 'horizontal'
+                                            },
+                                            content: [
+                                                {
+                                                    block  : 'control-group',
+                                                    mods   : {
+                                                        with: 'icon'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block: 'icon',
+                                                            mods : {
+                                                                type: 'envelope'
+                                                            }
+                                                        },
+                                                        {
+                                                            block      : 'input',
+                                                            placeholder: 'Enter your email Address'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'button',
+                                                    mods : {
+                                                        color: 'red'
+                                                    },
+                                                    text : 'Sign Up'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block  : 'menu',
+                                            mods   : {
+                                                type  : 'vertical',
+                                                device: 'mobile'
+                                            },
+                                            content: [
+                                                {
+                                                    block  : 'menu-item',
+                                                    content: [
+                                                        {
+                                                            block  : 'link',
+                                                            content: 'Media'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    content: [
+                                                        {
+                                                            block  : 'link',
+                                                            content: 'Privacy'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }

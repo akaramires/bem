@@ -41,6 +41,13 @@
     float: left;
 }
 
+.menu_type_vertical:after,
+.menu_type_vertical:before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 .menu_type_vertical .menu-item {
     display: block;
     padding: 0;
