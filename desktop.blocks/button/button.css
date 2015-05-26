@@ -167,3 +167,8 @@
 .button_border_strict {
     border-radius: 0;
 }
+
+.button_border_red {
+    color: #bd0000;
+    border: 1px solid #bd0000;
+}

@@ -96,10 +96,10 @@
                             ]
                         }
                     ]
-                }
+                },
                 /* SUBSCRIBE FORM end */
                 /* NAVBAR start */
-                , {
+                {
                     elem   : 'navbar',
                     content: [
                         {
@@ -107,122 +107,258 @@
                             cls    : 'header__container',
                             content: [
                                 {
-                                    elem   : 'logo',
+                                    elem   : 'desktop',
                                     block  : 'header',
                                     content: [
                                         {
-                                            block  : 'link',
+                                            elem   : 'logo',
+                                            block  : 'header',
                                             content: [
                                                 {
-                                                    block : 'image',
-                                                    url   : 'http://www.frameofmindcoaching.com/wp-content/themes/fom/assets/built/img/logo.png',
-                                                    title : 'Frame of Mind Coaching',
-                                                    width : 217,
-                                                    height: 26
+                                                    block  : 'link',
+                                                    content: [
+                                                        {
+                                                            block : 'image',
+                                                            url   : 'http://www.frameofmindcoaching.com/wp-content/themes/fom/assets/built/img/logo.png',
+                                                            title : 'Frame of Mind Coaching',
+                                                            width : 217,
+                                                            height: 26
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block  : 'menu',
+                                            cls    : 'header__menu',
+                                            mods   : {
+                                                type: 'inline'
+                                            },
+                                            content: [
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Coaching'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Our Team'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Testimonials'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'News &#038; Views'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Certification'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Contact'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    content: '|'
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Sign In'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type : 'link',
+                                                        style: 'bordered'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Get Started'
+                                                    }
                                                 }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'menu',
-                                    cls    : 'header__menu',
-                                    mods   : {
-                                        type: 'inline'
-                                    },
+                                    elem   : 'mobile',
+                                    block  : 'header',
                                     content: [
                                         {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Coaching'
-                                            }
+                                            elem   : 'head',
+                                            block  : 'header',
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type: 'menu'
+                                                    }
+                                                },
+                                                {
+                                                    elem   : 'logo',
+                                                    block  : 'header',
+                                                    content: [
+                                                        {
+                                                            block  : 'link',
+                                                            content: [
+                                                                {
+                                                                    block : 'image',
+                                                                    url   : 'http://www.frameofmindcoaching.com/wp-content/themes/fom/assets/built/img/logo_mob.png',
+                                                                    title : 'Frame of Mind Coaching',
+                                                                    width : 138,
+                                                                    height: 26
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'button',
+                                                    mods : {
+                                                        size  : 's',
+                                                        border: 'red'
+                                                    },
+                                                    text : 'Get Started'
+                                                }
+                                            ]
                                         },
                                         {
-                                            block  : 'menu-item',
+                                            block  : 'menu',
+                                            cls    : 'header__menu',
                                             mods   : {
-                                                type: 'link'
+                                                type: 'inline'
                                             },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Our Team'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Testimonials'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'News &#038; Views'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Certification'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Contact'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            content: '|'
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type: 'link'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Sign In'
-                                            }
-                                        },
-                                        {
-                                            block  : 'menu-item',
-                                            mods   : {
-                                                type : 'link',
-                                                style: 'bordered'
-                                            },
-                                            content: {
-                                                block  : 'link',
-                                                url    : '#',
-                                                content: 'Get Started'
-                                            }
+                                            content: [
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Coaching'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Our Team'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Testimonials'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'News &#038; Views'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Certification'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Contact'
+                                                    }
+                                                },
+                                                {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link'
+                                                    },
+                                                    content: {
+                                                        block  : 'link',
+                                                        url    : '#',
+                                                        content: 'Sign In'
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -235,7 +371,7 @@
         },
         /* HEADER end */
         /* BANNER start */
-        , {
+        {
             block  : 'banner',
             attrs  : {
                 style: 'background-image: url(http://www.frameofmindcoaching.com/wp-content/uploads/2014/12/person1.jpg);'

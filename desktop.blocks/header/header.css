@@ -33,6 +33,7 @@
 
 .header__navbar {
     height: 62px;
+    overflow: hidden;
 }
 
 .header__logo {
@@ -52,6 +53,126 @@
     float: right;
 }
 
+.header__mobile {
+    display: none;
+}
+
+.header__mobile .header__logo .image {
+    width: 138px;
+    height: 26px;
+}
+
+.header__mobile .header__head {
+}
+
+.header__mobile .header__head:after {
+    display: table-cell;
+    clear: both;
+    width: 100%;
+}
+
+.header__mobile .header__head .icon {
+    color: #bd0000;
+    font-size: 26px;
+    float: left;
+    margin: 25px 10px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header__mobile .header__head .header__logo {
+    margin: 27px 0 0;
+}
+
+.header__mobile .header__head .button {
+    padding: 0 1px;
+    margin: 20px 0;
+    float: right;
+}
+
+.header__mobile .header__head .button__text {
+    font-size: 14px;
+    width: 70px;
+    white-space: normal;
+    line-height: 1;
+}
+
+.header__mobile .menu {
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+.header__mobile .menu .menu-item:nth-child(2n+1):not(:last-child) {
+    background: #F5F2ED;
+}
+
+.header__mobile .menu .menu-item {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.header__mobile .menu .menu-item .link {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.header__mobile .menu .menu-item:last-child .link {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -moz-background-clip: padding;
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background: #F5F2ED;
+    border: 1px solid #B6B1A8;
+    width: auto;
+    color: #bd0000;
+    font-family: "Museo Slab W01";
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.header__mobile .menu .menu-item:not(:last-child) .link:after {
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    font-size: 28px;
+    color: #bd0000;
+    right: 10px;
+    content: "\e60a";
+}
+
+.header__mobile .menu .menu-item:last-child:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    background: #B6B1A8;
+    width: 100%;
+    height: 1px;
+    top: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .header__logo {
+        width: 139px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .header {
         position: fixed;
@@ -61,18 +182,23 @@
         width: 100%;
     }
 
-    .header__menu {
-        display: none;
-    }
-
     .header__subscribe {
         display: none;
     }
-}
 
-@media only screen and (max-width: 1199px) {
-    .header__logo {
-        width: 139px;
+    .header__desktop {
+        display: none;
+    }
+
+    .header__mobile {
+        display: block;
+    }
+
+    .header__mobile .header__logo {
+        width: 118px;
+    }
+
+    .header__navbar {
+        height: 80px;
     }
 }
-

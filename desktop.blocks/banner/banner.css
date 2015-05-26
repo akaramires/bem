@@ -94,7 +94,7 @@
 
 @media only screen and (max-width: 480px) {
     .banner__title {
-        margin: 0 auto 50px;
+        margin: 70px auto 50px;
         padding-top: 55px;
         font-size: 26px;
     }
