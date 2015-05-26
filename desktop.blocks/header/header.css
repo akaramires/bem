@@ -36,6 +36,10 @@
     overflow: hidden;
 }
 
+.header__navbar.on {
+    height: auto;
+}
+
 .header__logo {
     display: inline-block;
     margin: 20px 0 0;
@@ -75,8 +79,6 @@
     color: #bd0000;
     font-size: 26px;
     float: left;
-    margin: 25px 10px 0 0;
-    padding: 0;
     cursor: pointer;
 }
 
@@ -84,17 +86,23 @@
     margin: 27px 0 0;
 }
 
-.header__mobile .header__head .button {
+.header__mobile .header__head .button.get-started {
     padding: 0 1px;
     margin: 20px 0;
     float: right;
 }
 
-.header__mobile .header__head .button__text {
+.header__mobile .header__head .button.get-started .button__text {
     font-size: 14px;
     width: 70px;
     white-space: normal;
     line-height: 1;
+}
+
+.header__mobile .header__head .menu-button {
+    margin: 20px 10px 0 0;
+    padding: 0;
+    vertical-align: top;
 }
 
 .header__mobile .menu {

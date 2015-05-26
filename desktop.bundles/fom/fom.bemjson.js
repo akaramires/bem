@@ -241,10 +241,20 @@
                                             block  : 'header',
                                             content: [
                                                 {
-                                                    block: 'icon',
-                                                    mods : {
-                                                        type: 'menu'
-                                                    }
+                                                    block  : 'button',
+                                                    js     : true,
+                                                    cls    : 'menu-button',
+                                                    mods   : {
+                                                        type: 'base'
+                                                    },
+                                                    content: [
+                                                        {
+                                                            block: 'icon',
+                                                            mods : {
+                                                                type: 'menu'
+                                                            }
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     elem   : 'logo',
@@ -266,6 +276,7 @@
                                                 },
                                                 {
                                                     block: 'button',
+                                                    cls  : 'get-started',
                                                     mods : {
                                                         size  : 's',
                                                         border: 'red'

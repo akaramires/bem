@@ -172,3 +172,8 @@
     color: #bd0000;
     border: 1px solid #bd0000;
 }
+
+.button_type_base {
+    float: none!important;
+    border: none!important;
+}
