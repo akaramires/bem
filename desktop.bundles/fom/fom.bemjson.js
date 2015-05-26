@@ -474,12 +474,21 @@
                                             content: 'Learn More'
                                         },
                                         {
-                                            block: 'icon',
-                                            js   : true,
-                                            mods : {
-                                                type : 'arrow-down-thin',
-                                                color: 'white'
-                                            }
+                                            block  : 'button',
+                                            js     : true,
+                                            cls    : 'scroll-content',
+                                            mods   : {
+                                                type: 'base'
+                                            },
+                                            content: [
+                                                {
+                                                    block: 'icon',
+                                                    mods : {
+                                                        type : 'arrow-down-thin',
+                                                        color: 'white'
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

@@ -7,7 +7,7 @@ modules.define('button', [ 'i-bem__dom', 'jquery' ], function (provide, BEMDOM, 
 
     provide(BEMDOM.decl(this.name, {
         onSetMod: {
-            'js': {
+            'js'            : {
                 'inited': function () {
                     this.bindTo('click', function () {
 
@@ -17,8 +17,24 @@ modules.define('button', [ 'i-bem__dom', 'jquery' ], function (provide, BEMDOM, 
                             navbar.toggleClass('on', 1000, "easeOutSine");
                         }
 
+                        if (this.domElem.hasClass('scroll-content')) {
+                            this.setMod('scroll2section', 1);
+                        }
                     });
+
                 }
+            },
+            'scroll2section': function (modName, modVal, oldModVal) {
+                console.log(modName, modVal, oldModVal);
+                var $section = $('.section-' + modVal);
+
+                if (!$section.length) {
+                    return false;
+                }
+
+                $('html, body').animate({
+                    scrollTop: $section.offset().top - 30
+                }, 750);
             }
         }
     }));
