@@ -8,10 +8,6 @@
     cursor: pointer;
 }
 
-.link__control {
-
-}
-
 .link, .link:focus, .link:hover {
     outline: 0;
 }

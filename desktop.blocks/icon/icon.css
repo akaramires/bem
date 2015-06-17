@@ -11,9 +11,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon {
-}
-
 .icon:after {
     display: none;
 }
@@ -131,7 +128,7 @@
 }
 
 .icon_color_white {
-    color: #ffffff;
+    color: #fff;
 }
 
 .icon_size_s {

@@ -34,11 +34,11 @@
 }
 
 .box__content p {
-    font-family: arial, Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     margin: 0 0 20px;
     padding: 0;
-    color: #444444;
+    color: #444;
     line-height: 22px;
 }
 

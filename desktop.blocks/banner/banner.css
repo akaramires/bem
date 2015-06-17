@@ -10,10 +10,6 @@
     text-align: left;
 }
 
-.banner__container {
-
-}
-
 .banner__title {
     font-family: 'Kettering 105 W00', sans-serif;
     color: #fff;
@@ -34,12 +30,7 @@
     text-align: left;
 }
 
-.banner__actions {
-
-}
-
 .banner__scroll2content {
-    display: inline-block;
     margin: 15px 0 0 -55px;
     position: absolute;
     bottom: 10px;
