@@ -2,10 +2,6 @@
     display: inline-block;
 }
 
-.form_type_horizontal {
-
-}
-
 .form_type_horizontal .control-group {
     float: left;
 }

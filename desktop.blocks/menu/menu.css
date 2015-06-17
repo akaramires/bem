@@ -6,10 +6,6 @@
     outline: none;
 }
 
-.menu__control {
-
-}
-
 .menu-item {
     display: inline-block;
     float: left;
@@ -17,15 +13,9 @@
     line-height: 1;
 }
 
-.menu-item_type_link {
-}
-
 .menu-item_type_link .link {
     padding: 3px;
     font-size: 16px;
-}
-
-.menu_type_inline {
 }
 
 .menu-item_style_bordered {
@@ -56,8 +46,6 @@
 }
 
 .menu_type_vertical .menu-item .link {
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
     transition: all .2s;
     text-decoration: none !important;
     font-size: 13pt;
@@ -67,4 +55,3 @@
 .menu_type_vertical .menu-item .link:hover {
     color: #171717;
 }
-

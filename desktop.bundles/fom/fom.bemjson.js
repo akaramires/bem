@@ -57,7 +57,7 @@
                                 },
                                 {
                                     block  : 'form',
-                                    cls    : 'header__form',
+                                    mix    : { block: 'header', elem: 'form' },
                                     content: [
                                         {
                                             block  : 'control-group',
@@ -104,7 +104,7 @@
                     content: [
                         {
                             block  : 'container',
-                            cls    : 'header__container',
+                            mix    : { block: 'header', elem: 'container' },
                             content: [
                                 {
                                     elem   : 'desktop',
@@ -130,105 +130,64 @@
                                         },
                                         {
                                             block  : 'menu',
-                                            cls    : 'header__menu',
+                                            mix    : { block: 'header', elem: 'menu' },
                                             mods   : {
                                                 type: 'inline'
                                             },
                                             content: [
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Coaching'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Coaching'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Our Team'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Our Team'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Testimonials'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Testimonials'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'News &#038; Views'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'News &#038; Views'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Certification'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Certification'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Contact'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Contact'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    content: '|'
+                                                    content : '|'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Sign In'
-                                                    }
+                                                    url     : '#',
+                                                    content : 'Sign In'
                                                 },
                                                 {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type : 'link',
-                                                        style: 'bordered'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Get Started'
-                                                    }
+                                                    url     : '#',
+                                                    style   : 'bordered'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Get Started'
                                                 }
-                                            ]
+                                            ].map(function(item) {
+                                                return {
+                                                    block  : 'menu-item',
+                                                    mods   : {
+                                                        type: 'link',
+                                                        style: item.style
+                                                    },
+                                                    content: item.url ? {
+                                                        block  : 'link',
+                                                        url    : item.url,
+                                                        content: item.content
+                                                    } : item.content
+                                                };
+                                            })
                                         }
                                     ]
                                 },
@@ -242,8 +201,7 @@
                                             content: [
                                                 {
                                                     block  : 'button',
-                                                    js     : true,
-                                                    cls    : 'menu-button',
+                                                    mix    : 'menu-button',
                                                     mods   : {
                                                         type: 'base'
                                                     },
@@ -276,7 +234,7 @@
                                                 },
                                                 {
                                                     block: 'button',
-                                                    cls  : 'get-started',
+                                                    mix  : 'get-started',
                                                     mods : {
                                                         size  : 's',
                                                         border: 'red'
@@ -287,12 +245,41 @@
                                         },
                                         {
                                             block  : 'menu',
-                                            cls    : 'header__menu',
+                                            mix    : { block: 'header', elem: 'menu' },
                                             mods   : {
                                                 type: 'inline'
                                             },
                                             content: [
                                                 {
+                                                    url     : '#',
+                                                    content : 'Coaching'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Our Team'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Testimonials'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'News &#038; Views'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Certification'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Contact'
+                                                },
+                                                {
+                                                    url     : '#',
+                                                    content : 'Sign In'
+                                                }
+                                            ].map(function(item) {
+                                                return {
                                                     block  : 'menu-item',
                                                     mods   : {
                                                         type: 'link'
@@ -302,74 +289,8 @@
                                                         url    : '#',
                                                         content: 'Coaching'
                                                     }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Our Team'
-                                                    }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Testimonials'
-                                                    }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'News &#038; Views'
-                                                    }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Certification'
-                                                    }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Contact'
-                                                    }
-                                                },
-                                                {
-                                                    block  : 'menu-item',
-                                                    mods   : {
-                                                        type: 'link'
-                                                    },
-                                                    content: {
-                                                        block  : 'link',
-                                                        url    : '#',
-                                                        content: 'Sign In'
-                                                    }
-                                                }
-                                            ]
+                                                };
+                                            })
                                         }
                                     ]
                                 }
@@ -601,35 +522,19 @@
                                                                         {
                                                                             elem   : 'content',
                                                                             content: [
-                                                                                {
+                                                                                'Our coaches are phenomenal.',
+                                                                                'FOM Coaches are at the top of their game and in a class by themselves. They are prepared. They are purposeful. They artfully walk you through the coaching process. They are by your side the entire time.',
+                                                                                'They Live It.',
+                                                                                'They Breathe It.',
+                                                                                'And they will help you transform at a mind-blowing pace.',
+                                                                                'It takes a particular kind of coach to make the grade.',
+                                                                                'And it takes a particular type of client to meet the challenge.'
+                                                                            ].map(function(paragraph) {
+                                                                                return
                                                                                     tag    : 'p',
-                                                                                    content: 'Our coaches are phenomenal.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'FOM Coaches are at the top of their game and in a class by themselves. They are prepared. They are purposeful. They artfully walk you through the coaching process. They are by your side the entire time.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'They Live It.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'They Breathe It.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'And they will help you transform at a mind-blowing pace.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'It takes a particular kind of coach to make the grade.'
-                                                                                },
-                                                                                {
-                                                                                    tag    : 'p',
-                                                                                    content: 'And it takes a particular type of client to meet the challenge.'
-                                                                                }
-                                                                            ]
+                                                                                    content: paragraph
+                                                                                };
+                                                                            })
                                                                         }
                                                                     ]
                                                                 }
